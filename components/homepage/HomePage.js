@@ -1,5 +1,7 @@
+import styles from "./HomePage.module.scss";
+
 function HomePage() {
-  return <div>HomePage</div>;
+  return <div id={styles.homePage}></div>;
 }
 
 export default HomePage;
