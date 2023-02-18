@@ -17,7 +17,7 @@ function Parallax() {
 
   return (
     <div className="parallax" style={{ transform: `translateY(${offset * 0.5}px)` }}>
-      <h1>Parallax Effect</h1>
+      
     </div>
   );
 }
