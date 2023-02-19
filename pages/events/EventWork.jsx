@@ -3,6 +3,7 @@ import styles from "./event.module.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Upcoming from './Upcoming'
 import Past from './Past'
+import Mou from '@/components/EventWork/Mou';
 export default function EventWork() {
   const history = useHistory();
   const [selectedOption, setSelectedOption] = useState('upcoming');
@@ -31,7 +32,7 @@ export default function EventWork() {
         </div>
         <div>
             {
-              selectedOption=="upcoming"?<Upcoming/>:<Past/>
+              selectedOption=="upcoming"?<Upcoming/>: selectedOption=="past"?<Past/>:<Mou/>
             }
         </div>
    </div>
