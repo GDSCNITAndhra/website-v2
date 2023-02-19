@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "../../../images/gdscLogo.png";
 import styles from "./Navbar.module.scss";
 
@@ -7,7 +7,7 @@ function Navbar() {
   const [active, setActive] = useState(false);
 
   return (
-    <>
+    <nav>
       <div
         id={styles.navList}
         style={
@@ -41,7 +41,7 @@ function Navbar() {
           <div className={styles.bar} id={active ? styles.bar3 : ""} />
         </div>
       </nav>
-    </>
+    </nav>
   );
 }
 

@@ -1,0 +1,7 @@
+#upcoming{
+    border: 2px solid black;
+    min-height: 10vh;
+    width: 100%;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 4px;
+}
