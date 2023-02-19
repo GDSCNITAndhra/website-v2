@@ -21,11 +21,17 @@ function Navbar() {
           <h1>About</h1>
           <h1>Contact</h1>
           <h1>Team</h1>
+          <h1>Events</h1>
           <h1>Gallery</h1>
         </div>
       </div>
       <nav id={styles.navbar}>
-        <Image alt="logo" id={styles.gdscLogo} src={logo}></Image>
+        <Image
+          alt="logo"
+          id={styles.gdscLogo}
+          style={{ opacity: "0" }}
+          src={logo}
+        ></Image>
         <div
           id={styles.hamburger}
           onClick={() => (active ? setActive(false) : setActive(true))}

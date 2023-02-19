@@ -1,3 +1,4 @@
+import Contact from "../contact/Contact";
 import styles from "./HomePage.module.scss";
 
 function HomePage() {
