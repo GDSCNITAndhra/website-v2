@@ -23,6 +23,7 @@ function Navbar() {
           <h1>About</h1>
           <h1>Contact</h1>
           <h1>Team</h1>
+          <h1>Events</h1>
           <h1>Gallery</h1>
         </div>
       </div>
