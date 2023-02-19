@@ -5,11 +5,8 @@ import "../styles/globals.css";
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
-      <Landing src="https://gdsc-yonsei.github.io/assets/images/GDSC-Logo.png" opacity={1} />
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   );
 }

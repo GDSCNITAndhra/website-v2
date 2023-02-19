@@ -1,0 +1,25 @@
+#galleryContainer {
+  height: 100vh;
+  width: 100%;
+  padding-top: 10vh;
+}
+
+#imageCards {
+  display: grid;
+  margin: 0 auto;
+  gap: 1rem;
+  width: 70%;
+  min-height: 100vh;
+  background-color: blue;
+}
+
+.imageCard {
+  background-color: red;
+  height: 50vh;
+}
+
+@media (min-width: 600px) {
+  #imageCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
