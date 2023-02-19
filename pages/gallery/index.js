@@ -2,8 +2,6 @@ import styles from "./Gallery.module.scss";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import Image from "next/image";
-import galleryTornPage from "../../images/";
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0 },

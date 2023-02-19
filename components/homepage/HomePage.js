@@ -1,7 +1,6 @@
 import Contact from "../contact/Contact";
 import styles from "./HomePage.module.scss";
 import dynamic from "next/dynamic";
-
 import {
   ScrollContainer,
   ScrollPage,
@@ -63,8 +62,8 @@ function HomePage() {
             </span>
           </Animator>
         </ScrollPage>
-        <Contact />
       </ScrollContainer>
+      <Contact />
     </div>
   );
 }
