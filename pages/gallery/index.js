@@ -2,6 +2,11 @@ import styles from "./Gallery.module.scss";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import Image from "next/image";
+import demo from "../../images/demo.jpg";
+import ellipse from "../../images/Ellipse.svg";
+import square from "../../images/Rectangle.svg";
+
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0 },
@@ -27,7 +32,7 @@ const Box = ({ num }) => {
       initial="hidden"
       animate={control}
     >
-      <h1>Box {num} </h1>
+      <Image src={demo} alt=""></Image>
     </motion.div>
   );
 };
@@ -35,7 +40,14 @@ const Box = ({ num }) => {
 function index() {
   return (
     <div id={styles.galleryContainer}>
+      <div className={styles.animation_1} />
+      <div className={styles.animation_2} />
+      <div className={styles.animation_3} />
       <div id={styles.imageCards}>
+        <div id={styles.galleryTitle}>
+          <h1>Gallery.</h1>
+        </div>
+
         <Box num={1} />
         <Box num={1} />
         <Box num={1} />
