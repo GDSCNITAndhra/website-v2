@@ -34,7 +34,7 @@ function HomePage() {
         <ScrollPage>
           <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
             <span style={{ fontSize: "30px" }}>
-              Let me show you scroll animation 😀
+              Landing page under construction
             </span>
           </Animator>
         </ScrollPage>
@@ -43,22 +43,14 @@ function HomePage() {
             <span
               style={{ fontSize: "40px", width: "100%", textAlign: "center" }}
             >
-              Ism FadeUpScrollOut ✨
+              About - under construction
             </span>
           </Animator>
         </ScrollPage>
         <ScrollPage>
           <Animator animation={FadeUp}>
-            <span style={{ fontSize: "40px" }}>Im FadeUp ⛅️</span>
-          </Animator>
-        </ScrollPage>
-        <ScrollPage>
-          <Animator animation={batch(Fade(), Sticky())}>
-            <span style={{ fontSize: "40px" }}>Done</span>
-            <br />
-            <span style={{ fontSize: "30px" }}>
-              Theress FadeAnimation, MoveAnimation, StickyAnimation,
-              ZoomAnimation
+            <span style={{ fontSize: "40px" }}>
+              Designer Elements - under construction
             </span>
           </Animator>
         </ScrollPage>

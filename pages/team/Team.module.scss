@@ -1,0 +1,83 @@
+#teamsContainer {
+  min-height: 100vh;
+  width: 100%;
+}
+#meetTheTeam {
+  padding: 10vh 10%;
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.301));
+  justify-content: space-between;
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  p {
+    font-size: 4rem;
+    $base-color: #036;
+    @for $i from 1 through 11 {
+      span:nth-child(#{$i}) {
+        opacity: 0;
+        animation: slideUp 0.8s $i * 0.06s forwards;
+      }
+    }
+  }
+
+  #teamAgenda {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  @keyframes slideLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(10vw);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  #teamIcon {
+    height: inherit;
+    width: auto;
+    opacity: 0;
+    transform: translateX(10vw);
+    animation: slideLeft 1s 0.1s forwards;
+  }
+}
+
+.theTeam {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  h1 {
+    margin: 10vh 0 5vh 0;
+  }
+}
+
+#studentCards {
+  min-height: 100vh;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#leadInfoCard {
+  width: 100%;
+  div {
+    margin: 0 auto;
+  }
+}
