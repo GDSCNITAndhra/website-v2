@@ -17,6 +17,7 @@
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-scroll-motion": "^0.3.2",
     "react-spring": "^9.6.1",
     "sass": "^1.58.3"
   }

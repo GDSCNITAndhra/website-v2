@@ -10,7 +10,7 @@ import facebook from "../../images/facebook.svg";
 function Contact() {
   return (
     <div>
-      <h1 id={styles.contactHeading}>Contact</h1>
+      <h1 id={styles.contactHeading}>Contact Us</h1>
       <Image id={styles.page} src={page} alt="" />
 
       <div id={styles.contactContainer}>

@@ -26,7 +26,12 @@ function Navbar() {
         </div>
       </div>
       <nav id={styles.navbar}>
-        <Image alt="logo" id={styles.gdscLogo} src={logo}></Image>
+        <Image
+          alt="logo"
+          id={styles.gdscLogo}
+          style={{ opacity: "0" }}
+          src={logo}
+        ></Image>
         <div
           id={styles.hamburger}
           onClick={() => (active ? setActive(false) : setActive(true))}
