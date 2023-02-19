@@ -5,33 +5,15 @@
   position: relative;
 }
 
-#imageCards {
-  padding: 10vh 0;
-  display: grid;
-  margin: 0 auto;
-  width: 80%;
-  min-height: 100vh;
-}
-
-.imageCard {
-  background-color: rgb(204, 204, 204);
-  height: 60vh;
-  img {
-    height: inherit;
-    width: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
-  }
-}
-
 #galleryTitle {
   height: 50vh;
+  width: 47.5%;
   h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 600;
   }
   p {
-    width: 80%;
+    width: 100%;
     font-size: 1.5rem;
   }
   color: rgb(38, 25, 1);
@@ -43,62 +25,40 @@
   }
 }
 
-@keyframes slideSquare {
-  0% {
-    transform: translateY(-2vh) rotateZ(-19deg);
-  }
-  50% {
-    transform: translateY(2vh) rotateZ(-15deg);
-  }
-  100% {
-    transform: translateY(-3vh) rotateZ(-19deg);
+#imageCards {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 10vh 0;
+  min-height: 100vh;
+  justify-content: space-evenly;
+  // border-radius: 40px;
+  // background-color: rgba(0, 0, 0, 0.146);
+}
+
+.imageCard {
+  height: 50vh;
+  width: 50%;
+  img {
+    height: inherit;
+    width: 100%;
+    padding: 8px;
+    border-radius: 40px;
+    object-fit: cover;
+    object-position: 50% 50%;
   }
 }
 
-@keyframes slideTriangle {
-  0% {
-    transform: translateY(2vh) rotateZ(8deg);
+#firstImageCard {
+  height: 80vh;
+  width: 50%;
+  img {
+    height: inherit;
+    padding: 8px;
+    border-radius: 40px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
   }
-  50% {
-    transform: translateY(-3vh) rotateZ(4deg);
-  }
-  100% {
-    transform: translateY(2vh) rotateZ(8deg);
-  }
-}
-
-.animation_1 {
-  opacity: 0.8;
-  position: fixed;
-  z-index: -1;
-  animation: slideSquare 5s 0s infinite linear;
-  background: #fbbf12;
-  height: 30vh;
-  width: 45vh;
-}
-
-.animation_2 {
-  opacity: 0.8;
-  position: fixed;
-  z-index: -2;
-  width: 0;
-  height: 0;
-  border-left: 20vh solid transparent;
-  border-right: 30vh solid transparent;
-  border-bottom: 20vh solid #f00;
-  animation: slideTriangle 7s 0s infinite linear;
-  top: 70vh;
-  left: 5%;
-}
-.animation_3 {
-  opacity: 0.9;
-  position: fixed;
-  z-index: -2;
-  height: 30vh;
-  width: 30vh;
-  border-radius: 100%;
-  background-color: #279847;
-  animation: slideSquare 4s 0s infinite linear;
-  top: 50vh;
-  right: 5%;
 }

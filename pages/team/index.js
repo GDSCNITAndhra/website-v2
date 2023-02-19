@@ -47,7 +47,7 @@ function index() {
                 <div id={styles.teamAgenda}>
                   creative minds under the hood,
                   <br />
-                  building solutions for the good
+                  building solutions for the good.
                 </div>
               </p>
               <Image id={styles.teamIcon} src={team} alt=""></Image>
@@ -64,7 +64,6 @@ function index() {
           index={0}
         ></Card>
       </span>
-
       <div className={styles.theTeam}>
         <h1>Core Team</h1>
         <div id={styles.studentCards}>
@@ -100,6 +99,7 @@ function index() {
           ></Card>
         </div>
       </div>
+
       <div className={styles.theTeam}>
         <h1>Volunteers</h1>
         <div id={styles.studentCards}>

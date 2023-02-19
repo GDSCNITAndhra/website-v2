@@ -29,7 +29,8 @@
 }
 
 #gdscLeadAnimation {
-  animation: slideUp 1.5s 0s forwards;
+  opacity: 0;
+  animation: slideUp 1.5s 0.4s forwards;
 }
 
 @keyframes slideUp {
