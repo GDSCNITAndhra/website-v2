@@ -19,8 +19,10 @@ export default function Landing(props) {
   }, []);
 
   return (
-   
+    <div style={{height:"100vh",width:"100vw",position:"fixed"}}>
       <img src={props.src} alt="My Image" style={{ opacity: opacity ,width:"100vw",marginTop:"0px",paddingTop:"0px",alignContent:"start",justifyContent:"center"}} />
+    </div>
+      
 
   );
 }

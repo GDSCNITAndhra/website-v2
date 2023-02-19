@@ -1,16 +1,18 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import logo from "../../../images/gdscLogo.png";
 import styles from "./Navbar.module.scss";
 
 function Navbar() {
   const [active, setActive] = useState(false);
+  
 
   return (
-    <>
+    <nav>
       <div
         id={styles.navList}
         style={
+          
           active
             ? { transform: "translateY(0vh)", opacity: "1" }
             : { transform: "translateY(-100vh)", opacity: "0" }
@@ -24,7 +26,7 @@ function Navbar() {
           <h1>Gallery</h1>
         </div>
       </div>
-      <nav id={styles.navbar}>
+      <nav id={styles.navbar} >
         <Image alt="logo" id={styles.gdscLogo} src={logo}></Image>
         <div
           id={styles.hamburger}
@@ -35,7 +37,7 @@ function Navbar() {
           <div className={styles.bar} id={active ? styles.bar3 : ""} />
         </div>
       </nav>
-    </>
+    </nav>
   );
 }
 
