@@ -29,13 +29,13 @@ function Navbar() {
           <h1>
             <Link href="/">Winter School</Link>
           </h1>
-
-          <h1>
-            <Link href="/teams">Teams</Link>
-          </h1>
           <h1>
             <Link href="/events">Events</Link>
           </h1>
+          <h1>
+            <Link href="/teams">Teams</Link>
+          </h1>
+
           <h1>
             <Link href={"/gallery"}>Gallery</Link>
           </h1>

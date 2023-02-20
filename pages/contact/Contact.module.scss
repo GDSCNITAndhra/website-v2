@@ -38,8 +38,8 @@
 .inputBox {
   border-bottom: 2.5px solid black;
   padding: 0 20px;
-  font-size: 18px;
-  height: 3em;
+  font-size: 1.3rem;
+  min-height: 3em;
   margin-bottom: 10px;
 }
 #messageBox {
@@ -74,5 +74,31 @@
   img:hover {
     transform: translateY(-0.5vh);
     filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.137));
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #contactContainer {
+    flex-direction: column;
+    img {
+      height: 30vh;
+      width: auto;
+    }
+  }
+  #contactUsForm {
+    width: 100%;
+  }
+  #submitButton {
+    width: 60%;
+  }
+
+  #socialLinks {
+    margin: 5vh 0;
+    margin-left: 10%;
+    img {
+      height: 10vw;
+      width: 10vw;
+      margin: 0 1vw;
+    }
   }
 }
