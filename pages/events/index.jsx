@@ -1,41 +1,37 @@
 import React, { useState } from 'react'
 import styles from "./event.module.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Upcoming from './Upcoming'
 import Past from './Past'
-import { useEffect } from 'react'
-
 export default function EventWork() {
-  const [but,changebut] = useState(true);
-  const [opacity, setOpacity] = useState(0);
-  // const [pos,setpos] = useState("absolute")
-  useEffect(() => {
-    // Define the function that will update the opacity on scroll
-    function handleScroll() {
-      const newOpacity =  window.scrollY / window.innerHeight;
-      setOpacity(newOpacity);
-    }
+  const history = useHistory();
+  const [selectedOption, setSelectedOption] = useState('upcoming');
 
-    // Add the event listener for the scroll event
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+  
   return(
-    <div style={{marginTop:"30vh",zIndex:20, opacity:opacity}}>
+    <div style={{marginTop:"30vh",zIndex:20}}>
         <h2 >
             Events & Workshops
         </h2>
         <h3>
             Connect with us and explore!!!
         </h3>
-        <button id={styles.but1} className="button" onClick={()=>{changebut(false)}}>Upcoming Events</button>
-        <button id={styles.but2} className="button" onClick={()=>{changebut(true)}}>Past Events</button>
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" value="upcoming" name="btnradio" id="btnradio1" autocomplete="off" checked={selectedOption === 'upcoming'} onChange={handleOptionChange}/>
+          <label class="btn btn-outline-primary" for="btnradio1">Upcoming events</label>
+
+          <input type="radio" class="btn-check" value="past" name="btnradio" id="btnradio2" autocomplete="off" checked={selectedOption === 'past'} onChange={handleOptionChange}/>
+          <label class="btn btn-outline-primary" for="btnradio2">Past Events</label>
+
+          <input type="radio" class="btn-check" value="mou" name="btnradio" id="btnradio3" autocomplete="off" checked={selectedOption === 'mou'} onChange={handleOptionChange}/>
+          <label class="btn btn-outline-primary" for="btnradio3">MOUs</label>
+        </div>
         <div>
             {
-              but?<Past/>:<Upcoming/>
+              selectedOption=="upcoming"?<Upcoming/>:<Past/>
             }
         </div>
    </div>
