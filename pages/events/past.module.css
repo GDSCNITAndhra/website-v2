@@ -5,7 +5,9 @@
     border: 2px solid black;
     border-radius: 4px;
     margin: 5px;
+    text-decoration: none;
 }
+
 .arrange{
     display: flex;
     flex-direction: row;
@@ -13,10 +15,10 @@
 }
 .date{
     color: rgb(158, 158, 158);
-    
+    text-decoration: none;
 }
 .about{
-    font-weight: 900;
+    font-weight: 700;
     color: black;
 }
 .desc{
