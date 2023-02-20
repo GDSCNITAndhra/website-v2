@@ -1,81 +1,77 @@
 #footer {
-  min-height: 40vh;
+  min-height: 30vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: rgb(196, 196, 196);
   background-color: rgb(0, 0, 0);
 }
-#gdscBWLogo {
-  width: 40%;
-  height: auto;
-  margin: 0 30%;
-  opacity: 0.5;
-}
 
-#footerLinks {
+#footerWrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 80%;
-  margin: 0 10%;
-  div {
+  margin: 5vh 10% 0;
+  p {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-left: 5px;
+    color: rgba(215, 215, 215, 0.821);
+  }
+  #gdscBWLogo {
     width: 40%;
-    #footerQuickLinks {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      a {
-        color: rgb(255, 255, 255);
-        opacity: 0.5;
-        margin: 0 3%;
-      }
-      a:hover {
-        transform: scale(1.05);
-        opacity: 1;
-      }
+    height: auto;
+    opacity: 0.5;
+  }
+  #footerSocials {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      height: 6vh;
+      width: 6vh;
+      opacity: 0.5;
     }
-    #footerSocials {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      width: 60%;
-      margin: 0 20%;
-      img {
-        width: 5vh;
-        height: 5vh;
-        opacity: 0.5;
-      }
-      img:hover {
-        transform: scale(1.05);
-        filter: hue-rotate(180deg);
-        transition: 0.5s;
-        opacity: 1;
-      }
+    img:hover {
+      transform: scale(1.1);
+      opacity: 1;
+      transition: 0.3s ease-in-out;
     }
   }
 }
-
-.textAlign {
+#copyright {
   width: 100%;
   text-align: center;
-  margin-top: 3vh;
-  font-size: 1.4rem;
-  opacity: 0.9;
-  color: rgb(255, 255, 255);
-}
-#copyright {
-  font-size: 0.9rem;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 @media only screen and (max-width: 700px) {
-  #gdscBWLogo {
-    width: 80%;
-    margin: 0 10%;
-  }
-  #footerLinks {
+  #footerWrapper {
     flex-direction: column;
-    div {
-      width: 100%;
+    height: 20vh;
+    justify-content: space-evenly;
+    margin: 0;
+    #gdscBWLogo {
+      width: 90%;
+      margin: 0 5%;
+    }
+    #socialsWrapper {
+      display: flex;
+      flex-direction: column;
+      p {
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        opacity: 0.9;
+      }
+      #footerSocials {
+        justify-content: center;
+        img {
+          height: 5vh;
+          width: 5vh;
+        }
+      }
     }
   }
 }

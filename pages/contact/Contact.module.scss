@@ -8,6 +8,16 @@
   width: 100%;
 }
 
+@keyframes slideUp {
+  0% {
+    transform: translateY(10vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 #contactHeading {
   padding-top: 12vh;
   margin-left: 10%;
@@ -23,17 +33,21 @@
   flex-direction: row;
   justify-content: space-between;
   img {
+    opacity: 0;
     height: 40vh;
     width: 40%;
     object-fit: cover;
     object-position: 50% 50%;
+    animation: slideUp 1s 0.2s forwards;
   }
 }
 
 #contactUsForm {
   width: 50%;
+  opacity: 0;
   display: flex;
   flex-direction: column;
+  animation: slideUp 1s 0.2s forwards;
 }
 .inputBox {
   border-bottom: 2.5px solid black;

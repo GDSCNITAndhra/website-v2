@@ -10,20 +10,10 @@ import Link from "next/link";
 function Footer() {
   return (
     <footer id={styles.footer}>
-      <Image id={styles.gdscBWLogo} src={GDSCLogo} alt="GDSC Logo"></Image>
-      <section id={styles.footerLinks}>
-        <div>
-          <p className={styles.textAlign}>Quick Links</p>
-          <section id={styles.footerQuickLinks}>
-            <Link href="/winterschool">Winter School</Link>
-            <Link href="/gallery">Gallery</Link>
-            <Link href="/events">Events</Link>
-            <Link href="/teams">Team</Link>
-            <Link href="/contact">Contact</Link>
-          </section>
-        </div>
-        <div>
-          <p className={styles.textAlign}>Socials</p>
+      <section id={styles.footerWrapper}>
+        <Image id={styles.gdscBWLogo} src={GDSCLogo} alt="GDSC Logo"></Image>
+        <div id={styles.socialsWrapper}>
+          <p>Socials</p>
           <section id={styles.footerSocials}>
             <Image
               className={styles.socialsLink}
@@ -40,10 +30,7 @@ function Footer() {
           </section>
         </div>
       </section>
-      <p className={styles.textAlign} id={styles.copyright}>
-        {" "}
-        © 2023 GDSC NIT Andhra Pradesh
-      </p>
+      <p id={styles.copyright}>© 2023 GDSC NIT Andhra Pradesh</p>
     </footer>
   );
 }

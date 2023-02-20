@@ -15,7 +15,10 @@ function Contact() {
       <Image id={styles.page} src={page} alt="" />
 
       <div id={styles.contactContainer}>
-        <form action="mailto:wmano038@gmail.com" id={styles.contactUsForm}>
+        <form
+          action="mailto:gdsc.nitandhra@gmail.com"
+          id={styles.contactUsForm}
+        >
           <input
             className={styles.inputBox}
             type="text"
