@@ -1,13 +1,14 @@
 import React from "react";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 export default function () {
     let topstyle = {
         display:"flex",
         flexDirection:"column",
-        backgroundColor:"grey"
+        backgroundColor:"white",
+        borderRadius:"4px"
     }
   return (
-    <div style={topstyle}>
+    <div className="container" style={topstyle}>
       <h1>
         <span id="1" style={{ color: "blue" }}>
           G
@@ -31,12 +32,7 @@ export default function () {
           y
         </span>
       </h1>
-      <div >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quis
-        possimus repellendus aut reiciendis tempore iusto sapiente debitis rerum
-        accusantium temporibus cumque quos, minima fugiat officia nostrum modi,
-        asperiores fugit?
-      </div>
+      
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function EventWork() {
 
   return (
     <div className="container">
-      <div style={{ marginTop: "30vh", zIndex: 20 }}>
+      <div style={{zIndex: 20 }}>
         <div className={styles.container}>
           <h2>Events & Workshops</h2>
           <h3>Connect with us and explore!!!</h3>
