@@ -1,4 +1,3 @@
-import Contact from "../contact/Contact";
 import styles from "./HomePage.module.scss";
 import dynamic from "next/dynamic";
 import {
@@ -26,13 +25,13 @@ const Animator = dynamic(
 
 function HomePage() {
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-  const FadeUp = batch(Fade(), Move(), Sticky());
+  const FadeUp = batch(Fade(), Move());
   return (
     <div id={styles.homePage}>
       <div id={styles.aboutUsContainer}></div>
       <ScrollContainer>
         <ScrollPage>
-          <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+          <Animator animation={batch(Fade(), MoveOut(0, -200))}>
             <span style={{ fontSize: "30px" }}>
               Landing page under construction
             </span>
@@ -55,7 +54,6 @@ function HomePage() {
           </Animator>
         </ScrollPage>
       </ScrollContainer>
-      <Contact />
     </div>
   );
 }

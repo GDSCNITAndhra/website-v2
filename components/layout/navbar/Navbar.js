@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import logo from "../../../images/gdscLogo.png";
 import styles from "./Navbar.module.scss";
+import Link from "next/link";
 
 function Navbar() {
   const [active, setActive] = useState(false);
@@ -16,13 +17,31 @@ function Navbar() {
             : { transform: "translateY(-100vh)", opacity: "0" }
         }
       >
-        <div id={styles.navLinks}>
-          <h1>Home</h1>
-          <h1>About</h1>
-          <h1>Contact</h1>
-          <h1>Team</h1>
-          <h1>Events</h1>
-          <h1>Gallery</h1>
+        <div
+          id={styles.navLinks}
+          onClick={() => {
+            setActive(false);
+          }}
+        >
+          <h1>
+            <Link href="/">Home</Link>
+          </h1>
+          <h1>
+            <Link href="/">Winter School</Link>
+          </h1>
+
+          <h1>
+            <Link href="/teams">Teams</Link>
+          </h1>
+          <h1>
+            <Link href="/events">Events</Link>
+          </h1>
+          <h1>
+            <Link href={"/gallery"}>Gallery</Link>
+          </h1>
+          <h1>
+            <Link href="/contact">Contact</Link>
+          </h1>
         </div>
       </div>
       <nav id={styles.navbar}>

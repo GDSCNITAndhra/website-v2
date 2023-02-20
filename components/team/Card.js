@@ -18,7 +18,7 @@ function Card({ name, role, imageURL, index }) {
           animateIn={
             index === 1 ? "animate__fadeInLeft" : "animate__fadeInRight"
           }
-          delay={index * 150}
+          delay={index * 60}
         >
           <div className={styles.studentCard}>
             <Image src={imageURL} alt={`${name}`}></Image>

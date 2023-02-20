@@ -1,5 +1,5 @@
-import Navbar from "./navbar/Navbar";
 import Footer from "./footer/Footer";
+import Navbar from "./navbar/Navbar";
 
 function Layout({ children }) {
   // const [opacity, setOpacity] = useState(0);

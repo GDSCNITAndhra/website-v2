@@ -1,7 +1,5 @@
 import styles from "./Gallery.module.scss";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import Image from "next/image";
 import demo from "../../images/demo.jpg";
 import Floaters from "@/components/floatingObjects/Floaters";
@@ -11,18 +9,23 @@ const boxVariant = {
   hidden: { opacity: 0, scale: 0 },
 };
 
-const Box = () => {
+const ImageCard = ({ description }) => {
   return (
-    <div className={styles.imageCard}>
-      <Image src={demo} alt=""></Image>
-    </div>
+    <AnimationOnScroll animateIn={"animate__fadeInLeft"}>
+      <div className={styles.imageCard}>
+        <Image src={demo} alt="" />
+        <div className={styles.galleryImageInfo}>
+          <p>{description}</p>
+        </div>
+      </div>
+    </AnimationOnScroll>
   );
 };
 
 function index() {
   return (
     <div id={styles.galleryContainer}>
-      <Floaters></Floaters>
+      <Floaters />
       <div id={styles.imageCards}>
         <div id={styles.galleryTitle}>
           <h1>Gallery.</h1>
@@ -32,20 +35,21 @@ function index() {
           </p>
         </div>
         <div id={styles.firstImageCard}>
-          <Image src={demo} alt=""></Image>
+          <Image src={demo} alt="" />
+          <div className={styles.galleryImageInfo}>
+            <p>
+              sefe ssefes sefe ssefes sefe ssefes sefe ssefes sefe ssefes sefe
+              ssefes sefe ssefes sefe ssefes sefe ssefes sefe ssefes sefe ssefes
+              sefe ssefes sefe ssefes sefe ssefes sefe ssefes sefe ssefes sefe
+            </p>
+          </div>
         </div>
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
+        <ImageCard description={"Hi"} />
+        <ImageCard description={"Hi"} />
+        <ImageCard description={"Hi"} />
+        <ImageCard description={"Hi"} />
+        <ImageCard description={"Hi"} />
+        <ImageCard description={"Hi"} />
       </div>
     </div>
   );
