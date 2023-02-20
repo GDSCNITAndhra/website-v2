@@ -1,25 +1,24 @@
-#past{
-    border: 2px solid rgb(239, 239, 21);
-    min-height: 100vh;
-    width: 100%;
-    box-shadow: 2px 2px 3px rgb(143, 240, 40);
-    border-radius: 4px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 .pastevents{
     display: flex;
     flex-direction: column;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 5px;
+    text-decoration: none;
 }
+
 .arrange{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding: 5px;
 }
 .date{
     color: rgb(158, 158, 158);
-    
+    text-decoration: none;
 }
 .about{
-    font-weight: 900;
+    font-weight: 700;
     color: black;
 }
 .desc{

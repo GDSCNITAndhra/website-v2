@@ -1,16 +1,12 @@
-#EventWork{
+.container{
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 140vh;
-}
-#but1,#but2{
-    margin: 30px;
     
 }
-.button{
+.btngroup{
+    display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10vh;
 }
