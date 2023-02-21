@@ -12,7 +12,7 @@ function Footer() {
       <section id={styles.footerWrapper}>
         <Image id={styles.gdscBWLogo} src={GDSCLogo} alt="GDSC Logo"></Image>
         <div id={styles.socialsWrapper}>
-          <p>Find Us On</p>
+          <p>Find us on</p>
           <section id={styles.footerSocials}>
             <Image
               className={styles.socialsLink}

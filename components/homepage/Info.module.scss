@@ -1,0 +1,119 @@
+#infoPage {
+  min-height: 100vh;
+  width: 100%;
+}
+#infoCards {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10%;
+}
+
+.infoCard {
+  height: 60vh;
+  margin-top: 2vh;
+  border-radius: 10px;
+
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.274));
+  width: 30%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .infoCardIcon {
+    height: 10vh;
+    width: 10vh;
+    margin: 3vh auto;
+  }
+  .infoCardTitle {
+    font-size: 1.5rem;
+  }
+  .infoCardContent {
+    font-size: 1.2rem;
+    padding: 3vh 2vw;
+  }
+}
+.LearnMoreCard {
+  width: 80%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  margin: 0 10%;
+  img {
+    height: inherit;
+    width: auto;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      font-size: 2rem;
+      margin: 5vh 0 3vh;
+    }
+    p {
+      font-size: 1.2rem;
+      width: 90%;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(79, 79, 79);
+    }
+    .infoButton {
+      text-align: center;
+      width: 30%;
+      height: 2.2rem;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      background-color: #ededed;
+      border-bottom: 4px solid #0f9d58;
+      border-right: 4px solid #f4b400;
+      transition: 1s ease-in-out;
+    }
+    .infoButton:active {
+      border-bottom: none;
+      border-right: none;
+    }
+  }
+}
+
+#learnMoreContainer {
+  margin: 5vh 0;
+}
+
+@media only screen and (max-width: 450px) {
+  #infoCards {
+    flex-direction: column;
+  }
+  .infoCard {
+    width: 100%;
+    .infoCardContent {
+      padding: 3vh 4vw;
+    }
+  }
+  .LearnMoreCard {
+    height: 30vh;
+    img {
+      width: 40vw;
+      height: auto;
+    }
+    div {
+      h1 {
+        font-size: 1rem;
+        margin: 1vh 0;
+      }
+      p {
+        font-size: 0.9rem;
+        width: 100%;
+      }
+      .infoButton {
+        width: 90%;
+        height: 1.8rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -36,7 +36,7 @@ function Navbar() {
             <Link href="/">Home</Link>
           </h1>
           <h1>
-            <Link href="/">Winter School</Link>
+            <Link href="/winter-school">Winter School</Link>
           </h1>
           <h1>
             <Link href="/events">Events</Link>
