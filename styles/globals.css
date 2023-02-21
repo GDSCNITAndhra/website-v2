@@ -22,15 +22,6 @@ body {
   overflow-x: hidden;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-a:hover {
-  color: rgb(0, 70, 140);
-}
-
 input:focus,
 textarea:focus {
   outline: none;
@@ -54,6 +45,6 @@ textarea:focus {
 
 @media only screen and (max-width: 450px) {
   html {
-    font-size: 12px;
+    font-size: 15px;
   }
 }

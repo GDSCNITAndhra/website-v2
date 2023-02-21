@@ -13,56 +13,56 @@ export default function EventWork() {
 
   return (
     <div className="container">
-      <div style={{zIndex: 20 }}>
+      <div style={{ zIndex: 20 }}>
         <div className={styles.container}>
           <h2>Events & Workshops</h2>
           <h3>Connect with us and explore!!!</h3>
         </div>
 
         <div
-          class={`btn-group ${styles.btngroup}`}
+          className={`btn-group ${styles.btngroup}`}
           role="group"
           aria-label="Basic radio toggle button group"
         >
           <input
             type="radio"
-            class="btn-check"
+            className="btn-check"
             value="upcoming"
             name="btnradio"
             id="btnradio1"
-            autocomplete="off"
+            autoComplete="off"
             checked={selectedOption === "upcoming"}
             onChange={handleOptionChange}
           />
-          <label class="btn btn-outline-danger" for="btnradio1">
+          <label className="btn btn-outline-danger" htmlFor="btnradio1">
             Upcoming events
           </label>
 
           <input
             type="radio"
-            class="btn-check"
+            className="btn-check"
             value="past"
             name="btnradio"
             id="btnradio2"
-            autocomplete="off"
+            autoComplete="off"
             checked={selectedOption === "past"}
             onChange={handleOptionChange}
           />
-          <label class="btn btn-outline-primary" for="btnradio2">
+          <label className="btn btn-outline-primary" htmlFor="btnradio2">
             Past Events
           </label>
 
           <input
             type="radio"
-            class="btn-check"
+            className="btn-check"
             value="mou"
             name="btnradio"
             id="btnradio3"
-            autocomplete="off"
+            autoComplete="off"
             checked={selectedOption === "mou"}
             onChange={handleOptionChange}
           />
-          <label class="btn btn-outline-warning" for="btnradio3">
+          <label className="btn btn-outline-warning" htmlFor="btnradio3">
             MOUs
           </label>
         </div>

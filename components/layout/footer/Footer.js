@@ -4,8 +4,7 @@ import twitter from "../../../images/footer/twitter.svg";
 import facebook from "../../../images/footer/facebook.svg";
 import mail from "../../../images/footer/mail.svg";
 import Image from "next/image";
-import GDSCLogo from "../../../images/gdscLogoBW.png";
-import Link from "next/link";
+import GDSCLogo from "../../../images/gdscBW.png";
 
 function Footer() {
   return (
@@ -13,7 +12,7 @@ function Footer() {
       <section id={styles.footerWrapper}>
         <Image id={styles.gdscBWLogo} src={GDSCLogo} alt="GDSC Logo"></Image>
         <div id={styles.socialsWrapper}>
-          <p>Socials</p>
+          <p>Find Us On</p>
           <section id={styles.footerSocials}>
             <Image
               className={styles.socialsLink}
@@ -26,6 +25,7 @@ function Footer() {
               className={styles.socialsLink}
               src={facebook}
               alt="facebook"
+              id={styles.footerFacebookLogo}
             />
           </section>
         </div>

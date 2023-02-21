@@ -10,9 +10,21 @@
   z-index: 5;
 }
 
-#gdscLogo {
+.navbarOpacity {
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s ease-in-out;
+  filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.309));
+}
+
+.gdscLogo {
   width: auto;
   height: inherit;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+#gdscLogoVisibility {
+  opacity: 1;
 }
 
 #hamburger {
@@ -62,6 +74,14 @@
   align-items: center;
   transition: 0.5s ease-in-out;
   background-color: rgb(255, 255, 255);
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  a:hover {
+    color: rgb(0, 70, 140);
+  }
 }
 
 #navLinks {
@@ -73,10 +93,19 @@
 }
 
 @media only screen and (max-width: 450px) {
-  #gdscLogo {
-    height: 60%;
+  #gdscLogoVisibility {
+    height: auto;
+    width: 75vw;
+  }
+  .gdscLogo {
+    height: auto;
+    width: 75vw;
   }
   #navbar {
     padding: 0 5%;
+  }
+
+  #navLinks {
+    height: 30vh;
   }
 }

@@ -1,8 +1,10 @@
 import styles from "./Team.module.scss";
+import Image from "next/image";
 import dynamic from "next/dynamic";
 import team from "../../images/team.gif";
 import lead from "../../images/team/lead.png";
 import rocket from "../../images/rocket.gif";
+import Card from "../../components/team/Card";
 import {
   ScrollContainer,
   ScrollPage,
@@ -15,8 +17,6 @@ import {
   ZoomIn,
   MoveOut,
 } from "react-scroll-motion";
-import Image from "next/image";
-import Card from "../../components/team/Card";
 
 const Animator = dynamic(
   import("react-scroll-motion").then((it) => it.Animator),
@@ -35,7 +35,7 @@ function index() {
             animation={batch(Fade(), MoveOut(0, -600))}
           >
             <div id={styles.meetTheTeam}>
-              <p>
+              <div id={styles.meetTheTeamTitle}>
                 <span>M</span>
                 <span>e</span>
                 <span>e</span>
@@ -45,12 +45,13 @@ function index() {
                 <span style={{ color: "#4285F4" }}>e</span>
                 <span style={{ color: "#F4B400" }}>a</span>
                 <span style={{ color: "#0F9D58" }}>m</span>
+                <br />
                 <div id={styles.teamAgenda}>
                   creative minds under the hood,
                   <br />
                   building solutions for the good.
                 </div>
-              </p>
+              </div>
               <Image id={styles.teamIcon} src={team} alt=""></Image>
             </div>
           </Animator>
@@ -68,72 +69,25 @@ function index() {
       <div className={styles.theTeam} id={styles.coreTeam}>
         <h1>Core Team</h1>
         <div id={styles.studentCards}>
-          <Card
-            name={"Ritvik G"}
-            role={"GDSC Lead"}
-            imageURL={lead}
-            index={1}
-          ></Card>
-          <Card
-            name={"Ritvik G"}
-            role={"GDSC Lead"}
-            imageURL={lead}
-            index={2}
-          ></Card>
-          <Card
-            name={"Ritvik G"}
-            role={"GDSC Lead"}
-            imageURL={lead}
-            index={3}
-          ></Card>
-          <Card
-            name={"Ritvik G"}
-            role={"GDSC Lead"}
-            imageURL={lead}
-            index={1}
-          ></Card>
-          <Card
-            name={"Ritvik G"}
-            role={"GDSC Lead"}
-            imageURL={lead}
-            index={2}
-          ></Card>
+          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
+          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
+          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
+          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
+          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
+          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
+          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
         </div>
       </div>
 
       <div className={styles.theTeam} id={styles.volunteers}>
         <h1>Volunteers</h1>
         <div id={styles.studentCards}>
-          <Card
-            name={"Ritvik G"}
-            role={"GDSC Lead"}
-            imageURL={lead}
-            index={1}
-          ></Card>
-          <Card
-            name={"Ritvik G"}
-            role={"GDSC Lead"}
-            imageURL={lead}
-            index={2}
-          ></Card>
-          <Card
-            name={"Ritvik G"}
-            role={"GDSC Lead"}
-            imageURL={lead}
-            index={3}
-          ></Card>
-          <Card
-            name={"Ritvik G"}
-            role={"GDSC Lead"}
-            imageURL={lead}
-            index={1}
-          ></Card>
-          <Card
-            name={"Ritvik G"}
-            role={"GDSC Lead"}
-            imageURL={lead}
-            index={2}
-          ></Card>
+          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
+          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
+          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
+          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
+          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
+          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
         </div>
       </div>
     </div>

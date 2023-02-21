@@ -1,7 +1,7 @@
 #teamsContainer {
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(rgb(234, 245, 255) 50%, rgb(144, 202, 255) 50%);
+  background: linear-gradient(rgb(234, 245, 255) 50%, rgb(155, 228, 255) 50%);
 }
 
 #rocketTeamPage {
@@ -29,7 +29,7 @@
       opacity: 1;
     }
   }
-  p {
+  #meetTheTeamTitle {
     font-size: 4rem;
     $base-color: #036;
     @for $i from 1 through 11 {
@@ -41,7 +41,7 @@
   }
 
   #teamAgenda {
-    width: 80%;
+    width: 100%;
     font-size: 1.5rem;
   }
 
@@ -82,10 +82,10 @@
 }
 
 #coreTeam {
-  background-color: rgb(144, 202, 255);
+  background-color: rgb(155, 228, 255);
 }
 #volunteers {
-  background-color: rgb(116, 188, 255);
+  background-color: rgb(133, 221, 254);
 }
 
 #studentCards {
@@ -100,5 +100,28 @@
   height: 60vh;
   div {
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #meetTheTeam {
+    flex-direction: column;
+    #meetTheTeamTitle {
+      font-size: 2rem;
+    }
+    #teamIcon {
+      width: 80%;
+      height: auto;
+    }
+  }
+
+  #rocketTeamPage {
+    right: -27.5vw;
+    top: 45vh;
+    height: 40vh;
+  }
+  .theTeam {
+    border-top-right-radius: 175px;
+    border-top-left-radius: 175px;
   }
 }
