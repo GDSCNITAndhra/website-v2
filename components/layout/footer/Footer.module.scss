@@ -1,0 +1,89 @@
+#footer {
+  min-height: 30vh;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(196, 196, 196);
+  background-color: rgb(0, 0, 0);
+}
+
+#footerWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5vh 10% 0;
+  p {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-left: 5px;
+    color: rgba(215, 215, 215, 0.821);
+  }
+  #gdscBWLogo {
+    width: 20vw;
+    height: auto;
+    opacity: 0.5;
+  }
+
+  #footerSocials {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      height: 6vh;
+      width: 6vh;
+      opacity: 0.5;
+    }
+    #footerFacebookLogo {
+      height: 5vh;
+      width: 5vh;
+    }
+    img:hover {
+      transform: scale(1.1);
+      opacity: 1;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+#copyright {
+  width: 100%;
+  text-align: center;
+  opacity: 0.4;
+}
+
+@media only screen and (max-width: 700px) {
+  #footerWrapper {
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-evenly;
+    margin: 0;
+    #gdscBWLogo {
+      width: 70%;
+      padding-top: 15px;
+      margin: 2.5% 15%;
+    }
+    #socialsWrapper {
+      display: flex;
+      flex-direction: column;
+      p {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        opacity: 0.6;
+      }
+      #footerSocials {
+        justify-content: center;
+        img {
+          height: 4vh;
+          width: 4vh;
+        }
+      }
+      #footerFacebookLogo {
+        height: 3vh;
+        width: 3vh;
+      }
+    }
+  }
+}

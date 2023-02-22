@@ -1,0 +1,102 @@
+{
+  "pastEvents": [
+    {
+      "date": "FEB 3, 2023",
+      "title": "Info Session",
+      "content": "GDSC NIT Andhra Solution Challenge Intro Session",
+      "image": "solutionChallenge",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-gdsc-nit-andhra-solution-challenge-intro-session/"
+    },
+    {
+      "date": "JAN 24, 2023",
+      "title": "Speaker Session",
+      "content": "Tech Talk with Aditya C. | Cloud Computing",
+      "image": "speaker",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-tech-talk-with-aditya-c-cloud-computing/"
+    },
+    {
+      "date": "DEC 30, 2022",
+      "title": "Speaker Session",
+      "content": "Winter School with Nikhil Malankar",
+      "image": "speaker",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-winter-school-with-nikhil-malankar/"
+    },
+    {
+      "date": "DEC 27, 2022",
+      "title": "Demo Day",
+      "content": "Winter School session with Shruthi P.G.",
+      "image": "winterSchool",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-winter-school-session-with-shruthi-pg/"
+    },
+    {
+      "date": "DEC 24, 2022",
+      "title": "Demo Day",
+      "content": "Winter School session with Faiz",
+      "image": "winterSchool",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-winter-school-session-with-faiz/"
+    },
+    {
+      "date": "DEC 23, 2022",
+      "title": "Demo Day",
+      "content": "Winter School DSA Session-1",
+      "image": "winterSchool",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-winter-school-dsa-session-1/"
+    },
+    {
+      "date": "DEC 22, 2022",
+      "title": "Demo Day",
+      "content": "Winter School Web Dev Course session-1",
+      "image": "winterSchool",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-winter-school-web-dev-course-session-1/"
+    },
+    {
+      "date": "DEC 21, 2022",
+      "title": "Study Jam Workshop",
+      "content": "GDSC NIT Andhra Winter School",
+      "image": "studyJam",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-gdsc-nit-andhra-winter-school/"
+    },
+    {
+      "date": "NOV 23, 2022",
+      "title": "Speaker Session",
+      "content": "Webinar with Soundarya Balasubramani",
+      "image": "speaker",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-webinar-with-soundarya-balasubramani/"
+    },
+    {
+      "date": "NOV 11, 2022",
+      "title": "Demo Day",
+      "content": "Data Structures and Algorithms Demo Session",
+      "image": "demoDay",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-data-structures-and-algorithms-demo-session/"
+    },
+    {
+      "date": "NOV 10, 2022",
+      "title": "Demo Day",
+      "content": "Web Development Demo Session",
+      "image": "demoDay",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-web-development-demo-session/"
+    },
+    {
+      "date": "NOV 9, 2022",
+      "title": "Demo Day",
+      "content": "Git and GitHub Demo Session",
+      "image": "demoDay",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-git-and-github-demo-session/"
+    },
+    {
+      "date": "OCT 31, 2022",
+      "title": "Demo Day",
+      "content": "Git and GitHub Demo Session",
+      "image": "Roadmap",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-roadmap/"
+    },
+    {
+      "date": "SEP 12, 2022",
+      "title": "Info Session",
+      "content": "Git and GitHub Demo Session",
+      "image": "infoSession",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-info-session/"
+    }
+  ]
+}

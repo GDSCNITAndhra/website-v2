@@ -1,0 +1,158 @@
+#winterSchoolContainer {
+  min-height: 100vh;
+  width: 100%;
+}
+
+#winterBackground {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  object-position: 50% 50%;
+  filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.462));
+}
+
+#winterTheme {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#winterSchoolLogo {
+  height: 12vh;
+  width: auto;
+}
+
+#winterSchoolTitle {
+  font-size: 2rem;
+}
+
+#winterSchoolContext {
+  font-size: 1.1rem;
+  text-align: center;
+  width: 50vw;
+}
+
+#stayUpdatedBtn {
+  height: 2rem;
+  width: auto;
+  padding: 0 2.5vw;
+  color: rgb(241, 241, 241);
+  border-radius: 50px;
+  background-color: #2a78f6;
+  font-size: 1.2rem;
+}
+
+#stayUpdatedBtn:hover {
+  background-color: #4285f4;
+}
+
+#coursesContainer {
+  min-height: 100vh;
+  width: 100%;
+  padding: 8vh 10%;
+  h1 {
+    margin: 5vh 0;
+  }
+}
+#winterSchoolCourses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#benefitsWrapper {
+  height: 20vh;
+  width: 100%;
+  background-color: #f4f2f2;
+}
+
+#courseBenefitsContainer {
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+  width: 80%;
+  margin-left: 10%;
+  align-items: center;
+  justify-content: space-evenly;
+  .benefitsIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    .benefitText {
+      height: 5vh;
+      width: auto;
+    }
+  }
+}
+
+#courseFacilitators {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#FacilitatorsTitle {
+  margin: 10vh 10%;
+}
+
+.facilitatorCard {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vh 0 8vh;
+  text-align: center;
+
+  img {
+    height: auto;
+    width: 20vw;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 50%;
+  }
+  p {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #winterSchoolLogo {
+    width: 60%;
+    height: auto;
+  }
+  #winterSchoolContext {
+    width: 80%;
+  }
+  #benefitsWrapper {
+    height: 10vh;
+    #courseBenefitsContainer {
+      width: 90%;
+      margin-left: 5%;
+      .benefitsIcon {
+        img {
+          height: 6vh;
+        }
+      }
+    }
+  }
+  .facilitatorCard {
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  #FacilitatorsTitle {
+    margin: 3vh 10%;
+  }
+  .benefitText {
+    display: none;
+  }
+}

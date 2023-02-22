@@ -1,0 +1,76 @@
+@keyframes slideSquare {
+  0% {
+    transform: translateY(-2vh) rotateZ(-19deg);
+  }
+  50% {
+    transform: translateY(2vh) rotateZ(-15deg);
+  }
+  100% {
+    transform: translateY(-3vh) rotateZ(-19deg);
+  }
+}
+
+@keyframes slideTriangle {
+  0% {
+    transform: translateY(2vh) rotateZ(8deg);
+  }
+  50% {
+    transform: translateY(-3vh) rotateZ(4deg);
+  }
+  100% {
+    transform: translateY(2vh) rotateZ(8deg);
+  }
+}
+
+.animation_1 {
+  opacity: 0.8;
+  position: fixed;
+  z-index: -1;
+  animation: slideSquare 5s 0s infinite linear;
+  background: #fbbf12;
+  height: 30vh;
+  width: 45vh;
+}
+
+.animation_2 {
+  opacity: 0.8;
+  position: fixed;
+  z-index: -2;
+  width: 0;
+  height: 0;
+  border-left: 20vh solid transparent;
+  border-right: 30vh solid transparent;
+  border-bottom: 20vh solid #f00;
+  animation: slideTriangle 7s 0s infinite linear;
+  top: 70vh;
+  left: 5%;
+}
+.animation_3 {
+  opacity: 0.9;
+  position: fixed;
+  z-index: -2;
+  height: 30vh;
+  width: 30vh;
+  border-radius: 100%;
+  background-color: #279847;
+  animation: slideSquare 4s 0s infinite linear;
+  top: 50vh;
+  right: 5%;
+}
+
+@media only screen and (max-width: 450px) {
+  .animation_1 {
+    height: 15vh;
+    width: 23vh;
+  }
+  .animation_2 {
+    border-left: 10vh solid transparent;
+    border-right: 15vh solid transparent;
+    border-bottom: 10vh solid #f00;
+  }
+  .animation_3 {
+    top: 60vh;
+    height: 19vh;
+    width: 19vh;
+  }
+}

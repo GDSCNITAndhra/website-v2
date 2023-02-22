@@ -1,0 +1,52 @@
+.studentCard {
+  width: 300px;
+  height: auto;
+  margin-bottom: 5%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.185));
+  img {
+    height: 300px;
+    width: auto;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  div {
+    width: 100%;
+    text-align: center;
+    .studentName {
+      font-size: 1.5rem;
+    }
+    .studentRole {
+      font-size: 1.1rem;
+      color: rgba(0, 0, 0, 0.584);
+    }
+  }
+}
+.studentCard:hover {
+  background-color: rgba(255, 170, 0, 0.726);
+  transition: 1s;
+  img {
+    border-radius: 0;
+    transition: 0.4s;
+  }
+}
+
+#gdscLeadAnimation {
+  opacity: 0;
+  animation: slideUp 1.5s 0.4s forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

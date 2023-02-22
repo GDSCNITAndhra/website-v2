@@ -1,0 +1,95 @@
+#landingPage {
+  overflow: hidden;
+  height: 90vh;
+  width: 100%;
+}
+
+#landingPageContent {
+  height: 65vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#landingPageWrapper {
+  width: 80%;
+  height: 80vh;
+  margin-left: 10%;
+  padding: 15vh 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gdscColoredLogo {
+  height: auto;
+  width: 40vw;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(5vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#landingPageDesign {
+  filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.379));
+  height: 25vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+#gdscIntro {
+  display: flex;
+  flex-direction: column;
+  p {
+    width: 40vw;
+    padding-left: 6vw;
+    font-size: 1.1rem;
+    color: rgb(112, 112, 112);
+  }
+  animation: slideUp 1s 0s forwards;
+}
+
+@keyframes oscillate {
+  0% {
+    transform: translateY(5vh);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5vh);
+  }
+}
+
+#teamwork {
+  width: 40%;
+  height: auto;
+  animation: slideUp 1s 0s forwards;
+}
+@media only screen and (max-width: 600px) {
+  #landingPageWrapper {
+    flex-direction: column;
+    padding: 10vh 0;
+  }
+  .gdscColoredLogo {
+    width: 85vw;
+    height: auto;
+    margin: 2vh 0;
+  }
+  #gdscIntro {
+    p {
+      width: 100%;
+      padding-left: 12vw;
+      font-size: 0.9rem;
+    }
+  }
+  #teamwork {
+    width: 100%;
+  }
+}
