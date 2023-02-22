@@ -1,70 +1,64 @@
-import Top from "@/components/gallery/Top";
+import styles from "./Gallery.module.scss";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import Image from "next/image";
-import React from "react";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
-import isf from "../../images/arrow.png";
+import planetGIF from "../../images/planet2.gif";
+import { useState } from "react";
+import demo from "../../images/demo.jpg";
+import Floaters from "@/components/floatingObjects/Floaters";
+import SwiperCore, { Navigation, Thumbs } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+SwiperCore.use([Navigation]);
 
-const Carousel = () => {
-  const responsive = {
-    0: { items: 1 },
-    600: { items: 2 },
-    1024: { items: 3 },
-  };
-  let images = [
-    isf,
-    isf,
-    isf,
-    isf,
-    isf,
-    isf,
-    isf,
-    isf,
-    isf,
-    isf,
-    isf,
-    isf,
-    isf,
-    isf,
-  ];
+import b from "../../images/curiosity.gif";
+import a from "../../images/android.gif";
+// import styles from "./Gallery.module.scss";
 
-  return (
-    <>
-      <Top />
-      <div className="container" style={{ marginTop: "10vh" }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quis
-        possimus repellendus aut reiciendis tempore iusto sapiente debitis rerum
-        accusantium temporibus cumque quos, minima fugiat officia nostrum modi,
-        asperiores fugit?
-      </div>
-      <AliceCarousel
-        mouseTracking
-        items={images.map((image, index) => (
-          <div key={index}>
-            <Image
-              style={{
-                height: "30vh",
-                width: "30vw",
-                marginTop: "10vh",
-                border: "2px solid black",
-                borderRadius: "4px",
-                marginBottom: "10vh",
-              }}
-              src={image}
-              alt="Carousel Image"
-            />
-          </div>
-        ))}
-        responsive={responsive}
-        autoPlay
-        autoPlayInterval={3000}
-        animationType="slide"
-        infinite
-        disableDotsControls
-        disableButtonsControls
-      />
-    </>
-  );
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0 },
 };
 
-export default Carousel;
+function Index() {
+  const [activeThumb, setActiveThumb] = useState();
+  return (
+    <div id={styles.galleryContainer}>
+      <Floaters />
+      <div id={styles.galleryWrapper}>
+        <div id={styles.galleryTitle}>
+          <h1>Gallery.</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <Image id={styles.galleryIcon} src={planetGIF} alt="" />
+      </div>
+      <Swiper
+        loop={true}
+        spaceBetween={10}
+        navigation={true}
+        modules={[Navigation, Thumbs]}
+        grabCursor={true}
+        thumbs={{ swiper: activeThumb }}
+        id={styles.gallerySwiper}
+      >
+        <SwiperSlide>
+          <Image alt="" src={demo} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image alt="" src={demo} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image alt="" src={demo} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image alt="" src={a} />
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
+}
+
+export default Index;
