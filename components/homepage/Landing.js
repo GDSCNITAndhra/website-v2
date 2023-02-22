@@ -2,7 +2,6 @@ import Image from "next/image";
 import styles from "./Landing.module.scss";
 import gdscLogo from "../../images/gdscLogo.png";
 import planet from "../../images/team4.gif";
-import Info from "./Info";
 
 function Landing() {
   return (

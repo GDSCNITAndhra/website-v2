@@ -1,7 +1,6 @@
 import Image from "next/image";
 import page from "../../images/page.png";
 import styles from "./Contact.module.scss";
-import android from "../../images/android.gif";
 import linkedin from "../../images/linkedin.svg";
 import twitter from "../../images/twitter.svg";
 import mail from "../../images/mail.svg";

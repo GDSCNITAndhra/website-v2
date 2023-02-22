@@ -1,5 +1,4 @@
 import styles from "./Gallery.module.scss";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 import Image from "next/image";
 import planetGIF from "../../images/planet2.gif";
 import { useState } from "react";
@@ -11,7 +10,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 SwiperCore.use([Navigation]);
 
-import b from "../../images/curiosity.gif";
 import a from "../../images/android.gif";
 // import styles from "./Gallery.module.scss";
 

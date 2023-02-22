@@ -3,7 +3,7 @@ import styles from "./WinterSchool.module.scss";
 import winterSchoolLogo from "../../images/winterSchoolLogo.png";
 import Link from "next/link";
 import CourseCard from "../../components/cards/CourseCard";
-import winterBackground from "../../images/winterBackground1.jpg";
+import winterBackground from "../../images/winterBackground.jpg";
 import webdev from "../../images/webdev.png";
 import github from "../../images/github.png";
 import dsa from "../../images/dsa.png";

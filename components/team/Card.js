@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./Card.module.scss";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 
 function Card({ name, role, imageURL }) {
   return (
