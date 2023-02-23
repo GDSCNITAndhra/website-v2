@@ -2,9 +2,9 @@ import styles from "./Team.module.scss";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import team from "../../images/team.gif";
-import lead from "../../images/team/lead.png";
+import lead from "../../images/team/Ritvik.png";
 import rocket from "../../images/rocket.gif";
-import Card from "../../components/team/Card";
+import Card from "../../components/cards/MemberCard";
 import {
   ScrollContainer,
   ScrollPage,
@@ -17,6 +17,7 @@ import {
   ZoomIn,
   MoveOut,
 } from "react-scroll-motion";
+import teams from "../../content/team";
 
 const Animator = dynamic(
   import("react-scroll-motion").then((it) => it.Animator),
@@ -69,25 +70,33 @@ function index() {
       <div className={styles.theTeam} id={styles.coreTeam}>
         <h1>Core Team</h1>
         <div id={styles.studentCards}>
-          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
-          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
-          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
-          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
-          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
-          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
-          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
+          {teams.core.map((element, index) => {
+            return (
+              <Card
+                key={index}
+                name={element.name}
+                role={element.role ? element.role : "Core Team"}
+                imageURL={element.imgURL}
+              />
+            );
+          })}
         </div>
       </div>
-
-      <div className={styles.theTeam} id={styles.volunteers}>
-        <h1>Volunteers</h1>
-        <div id={styles.studentCards}>
-          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
-          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
-          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
-          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
-          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
-          <Card name={"Ritvik G"} role={"GDSC Lead"} imageURL={lead} />
+      <div id={styles.volunteerWrapper}>
+        <div className={styles.theTeam} id={styles.volunteers}>
+          <h1>Volunteers</h1>
+          <div id={styles.studentCards}>
+            {teams.others.map((element, index) => {
+              return (
+                <Card
+                  key={index}
+                  name={element.name}
+                  role={"Volunteer"}
+                  imageURL={element.imgURL}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

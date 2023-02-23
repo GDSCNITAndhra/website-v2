@@ -12,7 +12,7 @@
 }
 
 .infoCard {
-  height: 60vh;
+  min-height: 60vh;
   margin-top: 2vh;
   border-radius: 10px;
 
@@ -37,14 +37,14 @@
   }
 }
 .LearnMoreCard {
-  width: 80%;
-  height: 60vh;
+  width: 70%;
+  max-height: 60vh;
   display: flex;
   flex-direction: row;
-  margin: 0 10%;
+  margin: 0 auto;
   img {
-    height: inherit;
-    width: auto;
+    height: auto;
+    width: 50%;
   }
   div {
     display: flex;
@@ -79,12 +79,15 @@
     }
   }
 }
+#LearnMoreCardReverse {
+  flex-direction: row-reverse;
+}
 
 #learnMoreContainer {
   margin: 5vh 0;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   #infoCards {
     flex-direction: column;
   }
@@ -95,9 +98,10 @@
     }
   }
   .LearnMoreCard {
-    height: 30vh;
+    min-height: 30vh;
+    flex-direction: column;
     img {
-      width: 40vw;
+      width: 100%;
       height: auto;
     }
     div {
@@ -110,10 +114,14 @@
         width: 100%;
       }
       .infoButton {
-        width: 90%;
+        width: 50%;
+        margin: 0 auto;
         height: 1.8rem;
         font-size: 1rem;
       }
     }
+  }
+  #LearnMoreCardReverse {
+    flex-direction: column;
   }
 }

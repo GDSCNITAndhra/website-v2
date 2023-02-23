@@ -1,10 +1,11 @@
 import styles from "./Footer.module.scss";
 import linkedin from "../../../images/footer/linkedin.svg";
 import twitter from "../../../images/footer/twitter.svg";
-import facebook from "../../../images/footer/facebook.svg";
+import youtube from "../../../images/footer/youtube.svg";
 import mail from "../../../images/footer/mail.svg";
 import Image from "next/image";
 import GDSCLogo from "../../../images/gdscBW.png";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -14,19 +15,36 @@ function Footer() {
         <div id={styles.socialsWrapper}>
           <p>Find us on</p>
           <section id={styles.footerSocials}>
-            <Image
-              className={styles.socialsLink}
-              src={linkedin}
-              alt="linkedin"
-            />
-            <Image className={styles.socialsLink} src={twitter} alt="twitter" />
-            <Image className={styles.socialsLink} src={mail} alt="mail" />
-            <Image
-              className={styles.socialsLink}
-              src={facebook}
-              alt="facebook"
-              id={styles.footerFacebookLogo}
-            />
+            <Link
+              href="https://www.linkedin.com/company/gdscnitandhra/"
+              target={"_blank"}
+            >
+              <Image
+                className={styles.socialsLink}
+                src={linkedin}
+                alt="linkedin"
+              />
+            </Link>
+            <Link href="https://twitter.com/gdscnitandhra" target={"_blank"}>
+              <Image
+                className={styles.socialsLink}
+                src={twitter}
+                alt="twitter"
+              />
+            </Link>
+            <Link href="mailto:gdsc.nitandhra@gmail.com" target={"_blank"}>
+              <Image className={styles.socialsLink} src={mail} alt="mail" />
+            </Link>
+            <Link
+              href="https://www.youtube.com/@gdscnitandhra"
+              target={"_blank"}
+            >
+              <Image
+                className={styles.socialsLink}
+                src={youtube}
+                alt="youtube"
+              />
+            </Link>
           </section>
         </div>
       </section>

@@ -4,6 +4,7 @@ import event from "../../images/event.png";
 import dynamic from "next/dynamic";
 import Past from "./Past";
 import Upcoming from "./Upcoming";
+import content from "../../content/content.json";
 import MoU from "./MoU";
 
 import {
@@ -45,12 +46,9 @@ function Index() {
             <div id={styles.eventsTitleContainer}>
               <div id={styles.eventsTitle}>
                 <h1>Events</h1>
-                <p>
-                  aebehj fihff jeaufeha akjeded keajd dkje adeb nbnjn bhm nbjn
-                  nkmn nkn kn n nn bhbv ccvhbb jn n
-                </p>
+                <p>{content.eventsPage.about}</p>
               </div>
-              <Image src={event} alt="event" />
+              <Image priority={true} src={event} alt="event" />
             </div>
           </Animator>
         </ScrollPage>

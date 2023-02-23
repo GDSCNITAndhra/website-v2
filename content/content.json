@@ -1,0 +1,16 @@
+{
+  "homePage": {
+    "about": "We, GDSC-NITAP are a university-based community group with the aim of arming every developer with an arsenal of all the relevant google technologies to aid them in achieving their vision.",
+    "aboutWhat": "Google developer student clubs is an initiative launched by Google to bring together students interested in Google Developer Technologies and associated skills in a peer-to-peer learning environment.",
+    "aboutWhy": "Learn about a range of technical topics and gain new skills through hands-on workshops, events, talks, and project-building activities online and in-person.",
+    "aboutWho": "It is mainly focused on university students with a passion to learn and build solutions with technology and be a part of the change.",
+    "meetOurTeam": "We are a group of creative Designers, hardworking Developers & productive Event Managers who work towards teaching, learning and building scalable solutions.",
+    "ourEvents": "We intend to bridge the gap between theory and practice, by making students aware of technologies that can help them tackle problems."
+  },
+  "eventsPage": {
+    "about": "Through events, we aim to foster interdisciplinary collaboration to inspire projects and solutions that help people in campus, local, or global communities."
+  },
+  "galleryPage": {
+    "description": "GDSC-NITAP has conducted over 12 events and you can find a few captured moments, here."
+  }
+}

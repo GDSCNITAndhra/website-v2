@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./Card.module.scss";
+import styles from "./MemberCard.module.scss";
 
 function Card({ name, role, imageURL }) {
   return (

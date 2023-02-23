@@ -6,12 +6,11 @@ import demo from "../../images/demo.jpg";
 import Floaters from "@/components/floatingObjects/Floaters";
 import SwiperCore, { Navigation, Thumbs } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import content from "../../content/content.json";
 import "swiper/css";
 import "swiper/css/navigation";
 SwiperCore.use([Navigation]);
-
 import a from "../../images/android.gif";
-// import styles from "./Gallery.module.scss";
 
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
@@ -26,10 +25,7 @@ function Index() {
       <div id={styles.galleryWrapper}>
         <div id={styles.galleryTitle}>
           <h1>Gallery.</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <p>{content.galleryPage.description} </p>
         </div>
         <Image id={styles.galleryIcon} src={planetGIF} alt="" />
       </div>

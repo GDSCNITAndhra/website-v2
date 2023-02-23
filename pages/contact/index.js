@@ -4,8 +4,9 @@ import styles from "./Contact.module.scss";
 import linkedin from "../../images/linkedin.svg";
 import twitter from "../../images/twitter.svg";
 import mail from "../../images/mail.svg";
-import facebook from "../../images/facebook.svg";
+import youtube from "../../images/youtube.svg";
 import curiousity from "../../images/curiosity.gif";
+import Link from "next/link";
 
 function Contact() {
   return (
@@ -44,15 +45,26 @@ function Contact() {
             Submit
           </button>
         </form>
-        <Image src={curiousity} alt="" />
+        <Image priority={true} src={curiousity} alt="" />
       </div>
 
       <div id={styles.socialLinks}>
         <p>Lets connect! </p>
-        <Image src={linkedin} alt="linkedin" />
-        <Image src={mail} alt="mail" />
-        <Image src={facebook} alt="facebook" />
-        <Image src={twitter} alt="twitter" />
+        <Link
+          href="https://www.linkedin.com/company/gdscnitandhra/"
+          target={"_blank"}
+        >
+          <Image src={linkedin} alt="linkedin" />
+        </Link>
+        <Link href="mailto:gdsc.nitandhra@gmail.com" target={"_blank"}>
+          <Image src={mail} alt="mail" />
+        </Link>
+        <Link href="https://twitter.com/gdscnitandhra" target={"_blank"}>
+          <Image src={twitter} alt="twitter" />
+        </Link>
+        <Link href="https://www.youtube.com/@gdscnitandhra">
+          <Image src={youtube} alt="youtube" />
+        </Link>
       </div>
     </>
   );

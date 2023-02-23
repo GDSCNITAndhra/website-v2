@@ -10,12 +10,6 @@ function CourseCard({ imgURL, courseName, courseDescription }) {
       <div className={styles.courseInfo}>
         <p className={styles.courseName}>{courseName}</p>
         <p className={styles.courseDescription}>{courseDescription}</p>
-        <div className={styles.knowMore}>
-          <Link href="youtube.com">
-            learn more
-            <Image src={arrow} alt="" className={styles.arrow} />
-          </Link>
-        </div>
       </div>
     </div>
   );

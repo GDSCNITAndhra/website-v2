@@ -25,26 +25,6 @@
   }
   .courseDescription {
     font-size: 1rem;
-  }
-  .knowMore {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    a {
-      margin: 10px 0;
-      color: rgb(0, 87, 141);
-    }
-    .arrow {
-      height: 1rem;
-      width: auto;
-    }
-  }
-  .knowMore:hover {
-    transform: translateX(-2.5px);
-    transition: 0.2s ease-in-out;
-    .arrow {
-      transform: translateX(5px);
-      transition: 0.2s ease-in-out;
-    }
+    margin-bottom: 20px;
   }
 }

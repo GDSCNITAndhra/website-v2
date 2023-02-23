@@ -1,7 +1,8 @@
 import Image from "next/image";
 import styles from "./Landing.module.scss";
 import gdscLogo from "../../images/gdscLogo.png";
-import planet from "../../images/team4.gif";
+import team from "../../images/team4.gif";
+import content from "../../content/content.json";
 
 function Landing() {
   return (
@@ -10,14 +11,14 @@ function Landing() {
         <div id={styles.landingPageWrapper}>
           <div id={styles.gdscIntro}>
             <Image className={styles.gdscColoredLogo} src={gdscLogo} alt="" />
-            <p>
-              A community of developers, designers and tech nerds who desire to
-              learn, educate and grow. At GDSC NIT AP, we provide a platform for
-              individuals to learn, develop, collaborate, exchange ideas and
-              grow together
-            </p>
+            <p>{content.homePage.about}</p>
           </div>
-          <Image id={styles.teamwork} src={planet} alt="teamwork" />
+          <Image
+            priority={true}
+            id={styles.teamwork}
+            src={team}
+            alt="teamwork"
+          />
         </div>
       </section>
       <section id={styles.landingPageDesign} />
