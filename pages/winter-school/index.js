@@ -15,13 +15,16 @@ import intern from "../../images/winterSchool/intern.svg";
 import internText from "../../images/winterSchool/internText.svg";
 import doubt from "../../images/winterSchool/doubt.svg";
 import doubtText from "../../images/winterSchool/doubtText.svg";
-import ritvik from "../../images/team/lead.png";
+import ritvik from "../../images/team/Ritvik.png";
+import mamoor from "../../images/team/IMG_20221123_235128_261 - Mamoor Jaan Khan.jpg";
+import karthik from "../../images/team/Vobugari Raja Karthik - Raja Karthik.jpg";
 
-const Card = ({ name, imageURL }) => {
+const Card = ({ name, imageURL, designation }) => {
   return (
     <div className={styles.facilitatorCard}>
       <Image src={imageURL} alt="facilitator" />
       <p>{name}</p>
+      <span>{designation}</span>
     </div>
   );
 };
@@ -29,7 +32,12 @@ const Card = ({ name, imageURL }) => {
 function index() {
   return (
     <div id={styles.winterSchoolContainer}>
-      <Image id={styles.winterBackground} src={winterBackground} alt="" />
+      <Image
+        id={styles.winterBackground}
+        priority={true}
+        src={winterBackground}
+        alt=""
+      />
       <section id={styles.winterTheme}>
         <Image src={winterSchoolLogo} id={styles.winterSchoolLogo} alt="" />
         <h1 id={styles.winterSchoolTitle}>Winter School</h1>
@@ -47,9 +55,6 @@ function index() {
           counseling Renowned professionals will join the course and share their
           insights and knowledge in their respective fields.
         </p>
-        <Link href="/events">
-          <div id={styles.stayUpdatedBtn}>Stay Updated</div>
-        </Link>
       </section>
       <section id={styles.coursesContainer}>
         <h1>Courses Offered</h1>
@@ -81,27 +86,39 @@ function index() {
         <section id={styles.courseBenefitsContainer}>
           <div className={styles.benefitsIcon}>
             <Image src={cert} alt="" />
-            <Image className={styles.benefitText} src={certText} alt="" />
+            <p className={styles.benefitText}>Certificate from GDSC</p>
           </div>
           <div className={styles.benefitsIcon}>
             <Image src={doubt} alt="" />
-            <Image className={styles.benefitText} src={doubtText} alt="" />
+            <p className={styles.benefitText}>1:1 Doubt Clearance Session</p>
           </div>
           <div className={styles.benefitsIcon}>
             <Image src={intern} alt="" />
-            <Image className={styles.benefitText} src={internText} alt="" />
+            <p className={styles.benefitText}>
+              Potential Internship Counselling
+            </p>
           </div>
           <div className={styles.benefitsIcon}>
             <Image src={project} alt="" />
-            <Image className={styles.benefitText} src={projectText} alt="" />
+            <p className={styles.benefitText}>
+              Practical Project Implementation
+            </p>
           </div>
         </section>
       </div>
       <h1 id={styles.FacilitatorsTitle}>Course Facilitators</h1>
       <section id={styles.courseFacilitators}>
-        <Card name={"Mamoor Jaan Khan"} imageURL={ritvik} />
-        <Card name={"Ritvik G"} imageURL={ritvik} />
-        <Card name={"Vobugari Raja Karthik"} imageURL={ritvik} />
+        <Card
+          name={"Mamoor Jaan Khan"}
+          designation={"Development Lead"}
+          imageURL={mamoor}
+        />
+        <Card name={"Ritvik G"} designation={"GDSC Lead"} imageURL={ritvik} />
+        <Card
+          name={"Vobugari Raja Karthik"}
+          designation={"Senior Web Developer"}
+          imageURL={karthik}
+        />
       </section>
     </div>
   );

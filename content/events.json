@@ -98,5 +98,23 @@
       "image": "infoSession",
       "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-info-session/"
     }
+  ],
+  "upcomingEvents": [
+    {
+      "image": "solutionChallenge",
+      "title": "Solution Challenge - Design Day",
+      "date": "FEB 23, 2023",
+      "content": "WORKSHOP / STUDY GROUP",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-solution-challenge-design-day/"
+    }
+  ],
+  "MoU": [
+    {
+      "image": "sellular",
+      "title": "Sellular Community",
+      "date": "JAN 23, 2023",
+      "content": "Memorandum of Understanding",
+      "href": "#"
+    }
   ]
 }

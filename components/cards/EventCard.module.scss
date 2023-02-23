@@ -1,26 +1,7 @@
-#pastEvents {
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: center;
-}
-@keyframes slideUp {
-  0% {
-    transform: translateY(10vh);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0vh);
-    opacity: 1;
-  }
-}
-
 .eventCard {
   width: 250px;
   height: auto;
   margin: 10px 15px;
-  background-color: white;
-  filter: drop-shadow(0 2px 3px rgba(114, 114, 114, 0.386));
   animation: slideUp 0.8s 0s forwards;
   .eventCardImage {
     width: 230px;
@@ -32,23 +13,27 @@
   }
   p {
     text-align: center;
-    margin: 0;
-    width: 100%;
+    margin: 2px auto;
+    width: 90%;
   }
   .eventCardDate {
     color: rgb(45, 45, 45);
+    font-weight: 600;
+    font-size: 0.9rem;
   }
   .eventCardTitle {
-    font-size: 1.3rem;
-    background-color: rgba(0, 0, 0, 0.058);
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
   }
   .eventCardContent {
     color: rgb(67, 67, 67);
+    font-size: 0.9rem;
     margin-bottom: 10px;
   }
 }
 
 .eventCard:hover {
   background-color: rgb(250, 250, 250);
-  filter: drop-shadow(0 2px 3px rgba(1, 0, 0, 0.476));
+  filter: drop-shadow(0 2px 3px rgba(1, 0, 0, 0.1));
 }

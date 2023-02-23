@@ -1,0 +1,15 @@
+.Events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0vh);
+    opacity: 1;
+  }
+}

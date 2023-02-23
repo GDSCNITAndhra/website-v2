@@ -64,11 +64,15 @@
 #submitButton {
   background-color: rgb(15, 157, 88);
   margin-top: 5vh;
-  color: rgb(221, 219, 216);
+  color: rgb(236, 236, 236);
   height: 45px;
   width: 30%;
   font-size: 20px;
   border-radius: 20px;
+}
+
+#submitButton:hover {
+  background-color: rgb(14, 176, 95);
 }
 
 #socialLinks {
