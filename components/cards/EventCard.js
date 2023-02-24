@@ -5,6 +5,7 @@ import studyJam from "../../images/studyJam.jpg";
 import winterSchool from "../../images/winterSchool.png";
 import solutionChallange from "../../images/solutionChallenge.png";
 import sellular from "../../images/sellular.png";
+import loarr from "../../images/loarrCommunity.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -26,7 +27,10 @@ const EventCard = ({ props }) => {
       return solutionChallange;
     } else if (image === "sellular") {
       return sellular;
-    } else {
+    } else if(image==="loarr"){
+      return loarr;
+    }
+    else {
       return studyJam;
     }
   };
