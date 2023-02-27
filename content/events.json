@@ -1,10 +1,17 @@
 {
   "pastEvents": [
     {
-      "image": "solutionChallenge",
-      "title": "Solution Challenge - Design Day",
-      "date": "FEB 23, 2023",
+      "date": "FEB 27, 2023",
+      "title": "Solution Challenge - Articulation Day",
       "content": "WORKSHOP / STUDY GROUP",
+      "image": "solutionChallenge",
+      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-solution-challenge-articulation-day/"
+    },
+    {
+      "date": "FEB 23, 2023",
+      "title": "Solution Challenge - Design Day",
+      "content": "WORKSHOP / STUDY GROUP",
+      "image": "solutionChallenge",
       "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-solution-challenge-design-day/"
     },
     {
@@ -106,15 +113,7 @@
       "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-info-session/"
     }
   ],
-  "upcomingEvents": [
-    {
-      "image": "solutionChallenge",
-      "title": "Solution Challenge - Articulation Day",
-      "date": "FEB 27, 2023",
-      "content": "WORKSHOP / STUDY GROUP",
-      "href": "https://gdsc.community.dev/events/details/developer-student-clubs-national-institute-of-technologynit-andhra-pradesh-presents-solution-challenge-articulation-day/"
-    }
-  ],
+  "upcomingEvents": [],
   "MoU": [
     {
       "image": "sellular",

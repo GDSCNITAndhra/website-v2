@@ -3,19 +3,8 @@ import { useState } from "react";
 import logo from "../../../images/gdscLogo.png";
 import styles from "./Navbar.module.scss";
 import Link from "next/link";
-import { useEffect } from "react";
 
-function Navbar() {
-  const [active, setActive] = useState(false);
-  const [visible, setVisible] = useState(false);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () =>
-        setVisible(window.pageYOffset > 200)
-      );
-    }
-  }, []);
-
+function Navbar({ active, visible, handleSetActive }) {
   return (
     <nav>
       <div
@@ -29,7 +18,7 @@ function Navbar() {
         <div
           id={styles.navLinks}
           onClick={() => {
-            setActive(false);
+            handleSetActive();
           }}
         >
           <h1>
@@ -61,10 +50,7 @@ function Navbar() {
           id={visible ? styles.gdscLogoVisibility : ""}
           src={logo}
         />
-        <div
-          id={styles.hamburger}
-          onClick={() => (active ? setActive(false) : setActive(true))}
-        >
+        <div id={styles.hamburger} onClick={() => handleSetActive()}>
           <div className={styles.bar} id={active ? styles.bar1 : ""} />
           <div className={styles.bar} id={active ? styles.bar2 : ""} />
           <div className={styles.bar} id={active ? styles.bar3 : ""} />
