@@ -7,6 +7,7 @@ import mail from "../../images/mail.svg";
 import youtube from "../../images/youtube.svg";
 import curiousity from "../../images/curiosity.gif";
 import Link from "next/link";
+import IframeComponent from "./iframe"
 
 function Contact() {
   return (
@@ -15,7 +16,7 @@ function Contact() {
       <Image id={styles.page} src={page} alt="" />
 
       <div id={styles.contactContainer}>
-        <form
+        {/* <form
           action="mailto:gdsc.nitandhra@gmail.com"
           id={styles.contactUsForm}
         >
@@ -44,7 +45,8 @@ function Contact() {
           <button id={styles.submitButton} type="submit">
             Submit
           </button>
-        </form>
+        </form> */}
+          <IframeComponent/>
         <Image priority={true} src={curiousity} alt="" />
       </div>
 
