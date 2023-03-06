@@ -21,7 +21,6 @@ function Landing() {
           />
         </div>
       </section>
-      <section id={styles.landingPageDesign} />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 #teamsContainer {
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(rgb(234, 245, 255) 50%, rgb(155, 228, 255) 50%);
+  background: linear-gradient(rgb(252, 252, 252) 50%, rgb(233, 233, 233) 50%);
 }
 
 #rocketTeamPage {
@@ -18,8 +18,8 @@
   width: 100%;
   display: flex;
   overflow: hidden;
+  align-items: center;
   background-color: rgb(255, 255, 255);
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.301));
   justify-content: space-between;
   @keyframes slideUp {
     0% {
@@ -82,16 +82,16 @@
 
 #coreTeam {
   margin-top: 5vh;
-  background-color: rgb(155, 228, 255);
+  background-color: rgb(246, 246, 246);
 }
 
 #volunteerWrapper {
   height: auto;
   width: 100%;
   padding-top: 5vh;
-  background-color: rgb(155, 228, 255);
+  background-color: rgb(246, 246, 246);
   #volunteers {
-    background-color: rgb(133, 221, 254);
+    background-color: rgb(236, 236, 236);
   }
 }
 

@@ -2,14 +2,12 @@ import styles from "./Gallery.module.scss";
 import Image from "next/image";
 import planetGIF from "../../images/planet2.gif";
 import { useState } from "react";
-import demo from "../../images/demo.jpg";
-import Floaters from "@/components/floatingObjects/Floaters";
-import SwiperCore, { Navigation, Thumbs } from "swiper";
+import SwiperCore, { Autoplay, Navigation, Thumbs } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import content from "../../content/content.json";
 import "swiper/css";
 import "swiper/css/navigation";
-SwiperCore.use([Navigation]);
+SwiperCore.use([Autoplay]);
 import i1 from "../../images/gallery/Screenshot (1054).png";
 import i2 from "../../images/gallery/Screenshot (1055).png";
 import i3 from "../../images/gallery/Screenshot (1059).png";
@@ -29,22 +27,16 @@ function Index() {
   const [activeThumb, setActiveThumb] = useState();
   return (
     <div id={styles.galleryContainer}>
-      <Floaters />
-      <div id={styles.galleryWrapper}>
-        <div id={styles.galleryTitle}>
-          <h1>Gallery.</h1>
-          <p>{content.galleryPage.description} </p>
-        </div>
-        <Image id={styles.galleryIcon} src={planetGIF} alt="" />
-      </div>
+      <h1 id={styles.galleryTitle}>Gallery.</h1>
+
       <Swiper
         loop={true}
         spaceBetween={10}
-        navigation={true}
-        modules={[Navigation, Thumbs]}
+        modules={[Autoplay, Thumbs]}
         grabCursor={true}
         thumbs={{ swiper: activeThumb }}
         id={styles.gallerySwiper}
+        autoplay
       >
         {images.map((elem, index) => {
           return (

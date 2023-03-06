@@ -6,6 +6,7 @@ import Navbar from "./navbar/Navbar";
 function Layout({ children }) {
   const [active, setActive] = useState(false);
   const [visible, setVisible] = useState(false);
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () =>
