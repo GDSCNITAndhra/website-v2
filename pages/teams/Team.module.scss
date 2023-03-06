@@ -1,15 +1,7 @@
 #teamsContainer {
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(rgb(252, 252, 252) 50%, rgb(233, 233, 233) 50%);
-}
-
-#rocketTeamPage {
-  height: 50vh;
-  width: auto;
-  position: fixed;
-  right: 2%;
-  top: 45vh;
+  background: linear-gradient(rgb(245, 245, 245) 50%, rgb(236, 236, 236) 50%);
 }
 
 #meetTheTeam {
@@ -48,11 +40,11 @@
   @keyframes slideLeft {
     0% {
       opacity: 0;
-      transform: translateX(10vw);
+      transform: translateY(10vw);
     }
     100% {
       opacity: 1;
-      transform: translateX(0);
+      transform: translateY(0);
     }
   }
 
@@ -82,16 +74,16 @@
 
 #coreTeam {
   margin-top: 5vh;
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(236, 236, 236);
 }
 
 #volunteerWrapper {
   height: auto;
   width: 100%;
   padding-top: 5vh;
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(236, 236, 236);
   #volunteers {
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(230, 230, 230);
   }
 }
 
@@ -130,20 +122,15 @@
     }
   }
 
-  #rocketTeamPage {
-    right: -27.5vw;
-    top: 45vh;
-    height: 40vh;
-  }
   .theTeam {
-    border-top-right-radius: 175px;
-    border-top-left-radius: 175px;
+    border-top-right-radius: 140px;
+    border-top-left-radius: 140px;
   }
 }
 
 @media only screen and (max-width: 380px) {
   .theTeam {
-    border-top-right-radius: 140px;
-    border-top-left-radius: 140px;
+    border-top-right-radius: 130px;
+    border-top-left-radius: 130px;
   }
 }

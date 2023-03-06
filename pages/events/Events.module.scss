@@ -22,7 +22,6 @@
   padding: 0 10%;
   overflow: hidden;
   background-color: rgb(255, 255, 255);
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.368));
   justify-content: space-between;
   #eventsTitle {
     width: 50%;
@@ -47,11 +46,12 @@
   }
 }
 #eventsContainer {
-  width: 80%;
-  margin: 10vh 10%;
+  width: 100%;
+  padding: 10vh 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: rgb(250, 250, 250);
 }
 
 .timeLineSelector {

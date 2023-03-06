@@ -4,10 +4,8 @@ import planetGIF from "../../images/planet2.gif";
 import { useState } from "react";
 import SwiperCore, { Autoplay, Navigation, Thumbs } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import content from "../../content/content.json";
 import "swiper/css";
 import "swiper/css/navigation";
-SwiperCore.use([Autoplay]);
 import i1 from "../../images/gallery/Screenshot (1054).png";
 import i2 from "../../images/gallery/Screenshot (1055).png";
 import i3 from "../../images/gallery/Screenshot (1059).png";
@@ -22,6 +20,7 @@ const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0 },
 };
+SwiperCore.use([Autoplay]);
 
 function Index() {
   const [activeThumb, setActiveThumb] = useState();

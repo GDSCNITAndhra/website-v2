@@ -43,6 +43,7 @@
   padding: 8vh 10%;
   h1 {
     margin: 5vh 0;
+    font-weight: 400;
   }
 }
 #winterSchoolCourses {
@@ -74,7 +75,7 @@
       font-size: 0.9rem;
       width: 50%;
       color: #0000009a;
-      font-weight: 600;
+      font-weight: 400;
       margin: 0;
     }
   }
@@ -90,6 +91,7 @@
 
 #FacilitatorsTitle {
   margin: 10vh 10%;
+  font-weight: 400;
 }
 
 .facilitatorCard {
@@ -109,7 +111,7 @@
   }
   p {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     margin: 0%;
   }
   span {
@@ -143,7 +145,6 @@
         .benefitText {
           font-size: 0.6rem;
           color: #000000a0;
-          font-weight: 600;
           text-align: center;
           margin: 0;
           width: 100%;

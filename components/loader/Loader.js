@@ -1,11 +1,13 @@
-import Image from "next/image";
-import loaderGIF from "../../images/loader.gif";
 import styles from "./Loader.module.scss";
 
 function Loader() {
   return (
     <div id={styles.loader}>
-      <Image src={loaderGIF} alt="" />
+      <div id={styles.circles}>
+        <div id={styles.circle1} />
+        <div id={styles.circle2} />
+        <div id={styles.circle3} />
+      </div>
     </div>
   );
 }

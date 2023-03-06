@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useState } from "react";
 import logo from "../../../images/gdscLogo.png";
 import styles from "./Navbar.module.scss";
 import Link from "next/link";
