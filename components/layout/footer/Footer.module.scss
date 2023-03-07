@@ -1,5 +1,5 @@
 #footer {
-  min-height: 30vh;
+  height: 25vh;
   width: 100%;
   position: relative;
   z-index: 3;
@@ -11,14 +11,13 @@
 }
 
 #footerWrapper {
+  padding: 10px 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 5vh 10% 0;
   p {
     font-size: 1.5rem;
     margin: 0;
-    margin-left: 5px;
     color: rgba(215, 215, 215, 0.821);
   }
   #gdscBWLogo {
@@ -49,16 +48,14 @@
   opacity: 0.4;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 450px) {
   #footerWrapper {
     flex-direction: column;
     height: 20vh;
     justify-content: space-evenly;
-    margin: 0;
     #gdscBWLogo {
       width: 70%;
-      padding-top: 15px;
-      margin: 2.5% 15%;
+      margin: 0 auto;
     }
     #socialsWrapper {
       display: flex;
@@ -79,17 +76,25 @@
     }
   }
 }
-@media only screen and (max-width: 360px) {
-  #footer{
-    position: relative;
-    top: 7vh;
+
+@media only screen and (max-width: 390px) {
+  #footerWrapper {
+    #gdscBWLogo {
+      width: 60%;
+    }
+    #socialsWrapper {
+      p {
+        font-size: 0.8rem;
+      }
+      #footerSocials {
+        img {
+          height: 3.5vh;
+          width: 3.5vh;
+        }
+      }
+    }
   }
-  #footerWrapper{
-    position: relative;
-    top: 1vh;
-  }
-  #cpoyright{
-    position: relative;
-    top: 1.5vh;
+  #copyright {
+    font-size: 0.8rem;
   }
 }

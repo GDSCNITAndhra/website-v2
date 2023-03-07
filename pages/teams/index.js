@@ -3,7 +3,8 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import team from "../../images/team.gif";
 import lead from "../../images/team/Ritvik.png";
-import rocket from "../../images/rocket.gif";
+import { Reveal } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 import Card from "../../components/cards/MemberCard";
 import {
   ScrollContainer,
@@ -23,6 +24,15 @@ const Animator = dynamic(
   import("react-scroll-motion").then((it) => it.Animator),
   { ssr: false }
 );
+
+const customAnimation2 = keyframes`
+  from {
+   transform: translateY(3rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+`;
 
 function index() {
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
@@ -58,7 +68,6 @@ function index() {
           </Animator>
         </ScrollPage>
       </ScrollContainer>
-      <Image id={styles.rocketTeamPage} src={rocket} alt=""></Image>
       <span id={styles.leadInfoCard}>
         <Card
           name={"Ritvik G"}
@@ -67,6 +76,7 @@ function index() {
           index={0}
         ></Card>
       </span>
+
       <div className={styles.theTeam} id={styles.coreTeam}>
         <h1>Core Team</h1>
         <div id={styles.studentCards}>

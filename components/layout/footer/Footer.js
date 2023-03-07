@@ -7,9 +7,12 @@ import Image from "next/image";
 import GDSCLogo from "../../../images/gdscBW.png";
 import Link from "next/link";
 
-function Footer() {
+function Footer({ active }) {
   return (
-    <footer id={styles.footer}>
+    <footer
+      id={styles.footer}
+      style={active ? { display: "none" } : { display: "block" }}
+    >
       <section id={styles.footerWrapper}>
         <Image id={styles.gdscBWLogo} src={GDSCLogo} alt="GDSC Logo"></Image>
         <div id={styles.socialsWrapper}>

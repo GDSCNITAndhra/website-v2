@@ -108,4 +108,14 @@
   #navLinks {
     height: 30vh;
   }
+  #navList {
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    a:hover {
+      color: rgb(0, 70, 140);
+    }
+  }
 }
