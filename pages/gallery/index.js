@@ -1,8 +1,7 @@
 import styles from "./Gallery.module.scss";
 import Image from "next/image";
-import planetGIF from "../../images/planet2.gif";
 import { useState } from "react";
-import SwiperCore, { Autoplay, Navigation, Thumbs } from "swiper";
+import SwiperCore, { Autoplay, Thumbs } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";

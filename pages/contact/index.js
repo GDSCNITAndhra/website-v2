@@ -1,12 +1,6 @@
 import Image from "next/image";
-import page from "../../images/page.png";
 import styles from "./Contact.module.scss";
-import linkedin from "../../images/linkedin.svg";
-import twitter from "../../images/twitter.svg";
-import mail from "../../images/mail.svg";
-import youtube from "../../images/youtube.svg";
-import curiousity from "../../images/curiosity.gif";
-import Link from "next/link";
+import curiousity from "../../images/curiosity.jpg";
 import IframeComponent from "./iframe";
 
 function Contact() {

@@ -1,6 +1,6 @@
 import styles from "./Events.module.scss";
 import Image from "next/image";
-import event from "../../images/event.png";
+import event from "../../images/solutions.png";
 import dynamic from "next/dynamic";
 import Past from "./Past";
 import Upcoming from "./Upcoming";
