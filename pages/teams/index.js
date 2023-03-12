@@ -1,9 +1,8 @@
 import styles from "./Team.module.scss";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import team from "../../images/team.gif";
+import team from "../../images/teams.jpg";
 import lead from "../../images/team/Ritvik.png";
-import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import Card from "../../components/cards/MemberCard";
 import {

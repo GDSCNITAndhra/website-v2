@@ -3,8 +3,8 @@ import Image from "next/image";
 import question from "../../images/question.png";
 import group from "../../images/group.png";
 import idea from "../../images/idea.png";
-import team from "../../images/team6.gif";
-import events from "../../images/team2.gif";
+import team from "../../images/team.jpg";
+import events from "../../images/events.jpg";
 import Link from "next/link";
 import content from "../../content/content.json";
 import { useEffect, useState } from "react";
@@ -74,7 +74,7 @@ const Info = () => {
       <section id={styles.learnMoreContainer}>
         <LearnMoreCard
           reverse={true}
-          imageURL={events}
+          imageURL={team}
           title={"Meet our team!"}
           buttonMessage={"Our Team"}
           linkTo={"teams"}
@@ -82,7 +82,7 @@ const Info = () => {
         />
         <LearnMoreCard
           reverse={false}
-          imageURL={team}
+          imageURL={events}
           buttonMessage={"Visit Events"}
           title={"Learn about our Events"}
           linkTo={"events"}

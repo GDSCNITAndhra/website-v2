@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Landing.module.scss";
 import gdscLogo from "../../images/gdscLogo.png";
-import team from "../../images/team4.gif";
+import team from "../../images/home.png";
 import content from "../../content/content.json";
 
 function Landing() {
