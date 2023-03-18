@@ -2,6 +2,7 @@
   min-height: 80vh;
   width: 100%;
   position: relative;
+  background-color: rgb(242, 242, 242);
 }
 
 @keyframes slideUp {
@@ -29,7 +30,6 @@
 }
 
 #gallerySwiper {
-  background-color: rgb(242, 242, 242);
   width: 100%;
   height: auto;
   margin: 0 auto;
