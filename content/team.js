@@ -24,13 +24,13 @@ import i23 from "../images/team/Narasimha - PALLA LAKSHMI NARASIMHA 521208.jpg";
 import i24 from "../images/team/out. (8) - MALLADI SRI SIVA SAI SANJAY 221118.jpg";
 import i25 from "../images/team/passport size photo - Gajji Prem Kumar.png";
 import i26 from "../images/team/photo_1 - ANANYA RAVI 421104.jpg";
-import i27 from "../images/team/picture - ARCHANA MANJUNATH 421109.jpeg";
+import i27 from "../images/team/archana.png";
 import i28 from "../images/team/Siliveri Sriharshini 621251 - SILIVERI SRIHARSHINI 621251.png";
 import i29 from "../images/team/vivek pic 1 - VIVEK RANJAN 421274.jpg";
 import i30 from "../images/team/Vobugari Raja Karthik - Raja Karthik.jpg";
 import i31 from "../images/team/WhatsApp Image 2022-11-24 at 18.53.15 - PASUMARTHY SATHVIKA NIT AP.jpeg";
 import i32 from "../images/team/mano.jpg";
-
+import i33 from "../images/team/vishal.jpeg";
 const teams = {
   core: [
     { name: "MAMOOR JAAN KHAN", imgURL: i15, role: "Development Lead" },
@@ -46,7 +46,9 @@ const teams = {
     },
     { name: "NAVANEETH K NAMPOOTHIRI", imgURL: i8, role: "Design Lead" },
     { name: "ANANYA RAVI", imgURL: i26, role: "Event Manager" },
+    { name: "ARCHANA MANJUNATH", imgURL: i27, role: "Event Management Lead" },
     { name: "PADURU VIGNATEJ REDDY", imgURL: i2 },
+    { name: "Vishal Gokul", imgURL: i33, role: "Event Manager" },
     { name: "PRANAV", imgURL: i7 },
     { name: "RANGU LAYA", imgURL: i4 },
     { name: "ASEEM GUPTA", imgURL: i19 },
@@ -54,7 +56,6 @@ const teams = {
     { name: "MANO W", imgURL: i32, role: "Web Developer" },
     { name: "DEVESH KHICHAR", imgURL: i3, role: "Outreach Lead" },
     { name: "KORUPROLU MOHAN", imgURL: i13 },
-    { name: "ARCHANA MANJUNATH", imgURL: i27, role: "Event Management Lead" },
     { name: "CHEVVA ASHISH REDDY", imgURL: i9 },
     { name: "AYUSH POONIA", imgURL: i11 },
     { name: "ABHIMANYU TIWARI", imgURL: i12 },
