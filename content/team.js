@@ -5,7 +5,7 @@ import i4 from "../images/team/420228 - RANGU LAYA NIT AP.jpg";
 import i5 from "../images/team/422169 - KARNATI CHARAN 422169.png";
 import i6 from "../images/team/821110 - Nikhil Madasu.jpg";
 import i7 from "../images/team/c036c5af-4efb-4a2c-a476-8a5c391c6388 - 21.jpg";
-import i8 from "../images/team/Document 36_1 - NAVANEETH K NAMPOOTHIRI NIT AP.jpg";
+import i8 from "../images/team/IMG_20220910_124506.jpg";
 import i9 from "../images/team/IMG-20220808-WA0007 - CHEVVA ASHISH REDDY NIT AP.jpg";
 import i10 from "../images/team/IMG-20220909-WA0000 - RAVIRAJ MAGAR NIT AP (1).jpg";
 import i11 from "../images/team/IMG20220122195553_2 - AYUSH POONIA NIT AP.jpg";
@@ -14,7 +14,7 @@ import i13 from "../images/team/IMG20230127111217_2[1] - KORUPROLU MOHAN NIT AP.
 import i14 from "../images/team/IMG_20221123_225851 - Reconnecting.png";
 import i15 from "../images/team/IMG_20221123_235128_261 - Mamoor Jaan Khan.jpg";
 import i16 from "../images/team/IMG_20221124_205434 - SAI KIRAN DHULIPUDI NIT AP.jpg";
-import i17 from "../images/team/IMG_20221124_220749 - Meghana Kankipati.jpg";
+import i17 from "../images/team/IMG_20230318_141456.jpg";
 import i18 from "../images/team/IMG_20221124_234644 - Vivek Kumar.jpg";
 import i19 from "../images/team/IMG_20230122_183538_695 - ASEEM GUPTA 121103.jpg";
 import i20 from "../images/team/IMG_4856_COMPRESSED1 - Mayank Kumar Sain.jpg";
@@ -51,10 +51,10 @@ const teams = {
     { name: "RANGU LAYA", imgURL: i4 },
     { name: "ASEEM GUPTA", imgURL: i19 },
     { name: "VIKRAM SABLE", imgURL: i14 },
-    { name: "MANO W", imgURL: i32 },
-    { name: "DEVESH KHICHAR", imgURL: i3 },
+    { name: "MANO W", imgURL: i32, role: "Web Developer" },
+    { name: "DEVESH KHICHAR", imgURL: i3, role: "Outreach Lead" },
     { name: "KORUPROLU MOHAN", imgURL: i13 },
-    { name: "ARCHANA MANJUNATH", imgURL: i27 },
+    { name: "ARCHANA MANJUNATH", imgURL: i27, role: "Event Management Lead" },
     { name: "CHEVVA ASHISH REDDY", imgURL: i9 },
     { name: "AYUSH POONIA", imgURL: i11 },
     { name: "ABHIMANYU TIWARI", imgURL: i12 },
