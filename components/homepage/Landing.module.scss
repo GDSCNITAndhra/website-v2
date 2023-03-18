@@ -7,7 +7,6 @@
 #landingPageContent {
   height: 65vh;
   width: 100%;
-  overflow: hidden;
 }
 
 #landingPageWrapper {
@@ -62,7 +61,7 @@
 }
 
 #teamwork {
-  width: 40%;
+  width: 30vw;
   height: auto;
   animation: slideUp 1s 0s forwards;
 }
@@ -85,5 +84,6 @@
   }
   #teamwork {
     width: 100%;
+    height: auto;
   }
 }

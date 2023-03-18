@@ -37,20 +37,6 @@ function index() {
       <section id={styles.winterTheme}>
         <Image src={winterSchoolLogo} id={styles.winterSchoolLogo} alt="" />
         <h1 id={styles.winterSchoolTitle}>Winter School</h1>
-        <p id={styles.winterSchoolContext}>
-          Winter School is an online course conducted by GDSC NIT Andhra
-          Pradesh. This online course will guide three of the most demanding
-          courses required in the programming field. - Data structures and
-          algorithms - Web development - Git and GitHub Winter School aims to
-          provide a more profound and in-depth understanding of these topics.
-          The subject undertaken will be taught by experienced and qualified
-          mentors. The schedule of this course starts on 21st December and ends
-          on 30th December 2022. The key aspects that make Winter School stand
-          out from other available courses are: - 1-1 doubt sessions - Practical
-          problems implementation - Certificate by GDSC - Potential internship
-          counseling Renowned professionals will join the course and share their
-          insights and knowledge in their respective fields.
-        </p>
       </section>
       <section id={styles.coursesContainer}>
         <h1>Courses Offered</h1>
